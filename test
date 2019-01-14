@@ -1,0 +1,3596 @@
+
+{"index": {"_id": 0}}
+{"nombre_paciente": {"nombre": "Bowers","apellido": "Bartlett"
+  },
+  "edad": 18,
+  "sexo": "M",
+  "direccion": "Varick Avenue",
+  "ubigeo": 100018,
+  "dni": 71457215,
+  "grado_de_instrucción": "nulla",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(955) 520-2002",
+  "apoderado": "Robert",
+  "especialidad": "qui",
+  "motivo_de_consulta": "Enfermedad non",
+  "antecedentes": [
+    "minim",
+    "eiusmod",
+    "id"
+  ],
+  "examen_clinico": "Examen de cupidatat",
+  "diagnostico": "aute aute",
+  "tratamiento": [
+    "in",
+    "eiusmod"
+  ],
+  "examenes_auxiliares": [
+    "irure",
+    "ad"
+  ],
+  "medico": "Dr aliqua"
+}
+{"index": {"_id": 1}}
+{
+  "nombre_paciente": {
+    "nombre": "Rosa",
+    "apellido": "Golden"
+  },
+  "edad": 68,
+  "sexo": "M",
+  "direccion": "Middleton Street",
+  "ubigeo": 100068,
+  "dni": 71457259,
+  "grado_de_instrucción": "laboris",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(917) 522-3289",
+  "apoderado": "Cole",
+  "especialidad": "fugiat",
+  "motivo_de_consulta": "Enfermedad anim",
+  "antecedentes": [
+    "officia",
+    "nulla",
+    "cillum"
+  ],
+  "examen_clinico": "Examen de enim",
+  "diagnostico": "nostrud amet",
+  "tratamiento": [
+    "aute",
+    "aute"
+  ],
+  "examenes_auxiliares": [
+    "labore",
+    "aliquip"
+  ],
+  "medico": "Dr ex"
+}
+{"index": {"_id": 2}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Gray",
+    "apellido": "Cotton"
+  },
+  "edad": 35,
+  "sexo": "M",
+  "direccion": "Eastern Parkway",
+  "ubigeo": 100035,
+  "dni": 71457243,
+  "grado_de_instrucción": "ea",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(899) 431-2953",
+  "apoderado": "Sims",
+  "especialidad": "eiusmod",
+  "motivo_de_consulta": "Enfermedad id",
+  "antecedentes": [
+    "dolore",
+    "veniam",
+    "exercitation"
+  ],
+  "examen_clinico": "Examen de amet",
+  "diagnostico": "eu eiusmod",
+  "tratamiento": [
+    "labore",
+    "culpa"
+  ],
+  "examenes_auxiliares": [
+    "qui",
+    "reprehenderit"
+  ],
+  "medico": "Dr non"
+}
+{"index": {"_id": 3}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Flossie",
+    "apellido": "Sanchez"
+  },
+  "edad": 36,
+  "sexo": "F",
+  "direccion": "Dearborn Court",
+  "ubigeo": 100036,
+  "dni": 71457231,
+  "grado_de_instrucción": "do",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(963) 473-2018",
+  "apoderado": "Stone",
+  "especialidad": "excepteur",
+  "motivo_de_consulta": "Enfermedad velit",
+  "antecedentes": [
+    "cupidatat",
+    "culpa",
+    "laboris"
+  ],
+  "examen_clinico": "Examen de anim",
+  "diagnostico": "et est",
+  "tratamiento": [
+    "tempor",
+    "labore"
+  ],
+  "examenes_auxiliares": [
+    "aliqua",
+    "ipsum"
+  ],
+  "medico": "Dr ea"
+}
+{"index": {"_id": 4}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Mcbride",
+    "apellido": "Bolton"
+  },
+  "edad": 30,
+  "sexo": "F",
+  "direccion": "Butler Street",
+  "ubigeo": 100030,
+  "dni": 71457225,
+  "grado_de_instrucción": "labore",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(906) 568-3111",
+  "apoderado": "Gonzalez",
+  "especialidad": "pariatur",
+  "motivo_de_consulta": "Enfermedad cillum",
+  "antecedentes": [
+    "minim",
+    "eiusmod",
+    "quis"
+  ],
+  "examen_clinico": "Examen de minim",
+  "diagnostico": "Lorem irure",
+  "tratamiento": [
+    "ad",
+    "adipisicing"
+  ],
+  "examenes_auxiliares": [
+    "labore",
+    "amet"
+  ],
+  "medico": "Dr pariatur"
+}
+{"index": {"_id": 5}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Brianna",
+    "apellido": "Nunez"
+  },
+  "edad": 69,
+  "sexo": "M",
+  "direccion": "Dover Street",
+  "ubigeo": 100069,
+  "dni": 71457277,
+  "grado_de_instrucción": "culpa",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(897) 569-2050",
+  "apoderado": "Eddie",
+  "especialidad": "exercitation",
+  "motivo_de_consulta": "Enfermedad velit",
+  "antecedentes": [
+    "duis",
+    "commodo",
+    "nulla"
+  ],
+  "examen_clinico": "Examen de excepteur",
+  "diagnostico": "ad consectetur",
+  "tratamiento": [
+    "dolore",
+    "laboris"
+  ],
+  "examenes_auxiliares": [
+    "occaecat",
+    "voluptate"
+  ],
+  "medico": "Dr veniam"
+}
+{"index": {"_id": 6}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Pate",
+    "apellido": "Beck"
+  },
+  "edad": 88,
+  "sexo": "F",
+  "direccion": "Heyward Street",
+  "ubigeo": 100088,
+  "dni": 71457291,
+  "grado_de_instrucción": "anim",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(924) 456-3874",
+  "apoderado": "Roach",
+  "especialidad": "enim",
+  "motivo_de_consulta": "Enfermedad proident",
+  "antecedentes": [
+    "quis",
+    "eu",
+    "quis"
+  ],
+  "examen_clinico": "Examen de sit",
+  "diagnostico": "sunt Lorem",
+  "tratamiento": [
+    "anim",
+    "officia"
+  ],
+  "examenes_auxiliares": [
+    "esse",
+    "reprehenderit"
+  ],
+  "medico": "Dr eu"
+}
+{"index": {"_id": 7}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Nielsen",
+    "apellido": "Charles"
+  },
+  "edad": 27,
+  "sexo": "F",
+  "direccion": "Dean Street",
+  "ubigeo": 100027,
+  "dni": 71457234,
+  "grado_de_instrucción": "proident",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(834) 549-2280",
+  "apoderado": "Carolina",
+  "especialidad": "ullamco",
+  "motivo_de_consulta": "Enfermedad minim",
+  "antecedentes": [
+    "ullamco",
+    "ex",
+    "aliquip"
+  ],
+  "examen_clinico": "Examen de sunt",
+  "diagnostico": "elit pariatur",
+  "tratamiento": [
+    "voluptate",
+    "culpa"
+  ],
+  "examenes_auxiliares": [
+    "aliquip",
+    "reprehenderit"
+  ],
+  "medico": "Dr nisi"
+}
+{"index": {"_id": 8}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Brittney",
+    "apellido": "Barton"
+  },
+  "edad": 12,
+  "sexo": "F",
+  "direccion": "Withers Street",
+  "ubigeo": 100012,
+  "dni": 71457205,
+  "grado_de_instrucción": "sit",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(977) 587-2513",
+  "apoderado": "Spears",
+  "especialidad": "nisi",
+  "motivo_de_consulta": "Enfermedad exercitation",
+  "antecedentes": [
+    "cillum",
+    "consectetur",
+    "labore"
+  ],
+  "examen_clinico": "Examen de in",
+  "diagnostico": "officia qui",
+  "tratamiento": [
+    "cupidatat",
+    "commodo"
+  ],
+  "examenes_auxiliares": [
+    "amet",
+    "nisi"
+  ],
+  "medico": "Dr laborum"
+}
+{"index": {"_id": 9}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Janet",
+    "apellido": "Lamb"
+  },
+  "edad": 63,
+  "sexo": "F",
+  "direccion": "Sedgwick Place",
+  "ubigeo": 100063,
+  "dni": 71457265,
+  "grado_de_instrucción": "voluptate",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(961) 542-3609",
+  "apoderado": "Johns",
+  "especialidad": "mollit",
+  "motivo_de_consulta": "Enfermedad fugiat",
+  "antecedentes": [
+    "incididunt",
+    "elit",
+    "proident"
+  ],
+  "examen_clinico": "Examen de deserunt",
+  "diagnostico": "labore eiusmod",
+  "tratamiento": [
+    "labore",
+    "ipsum"
+  ],
+  "examenes_auxiliares": [
+    "eu",
+    "reprehenderit"
+  ],
+  "medico": "Dr qui"
+}
+{"index": {"_id": 10}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Dina",
+    "apellido": "Hardy"
+  },
+  "edad": 14,
+  "sexo": "M",
+  "direccion": "Boerum Place",
+  "ubigeo": 100014,
+  "dni": 71457207,
+  "grado_de_instrucción": "ut",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(899) 587-3990",
+  "apoderado": "Lourdes",
+  "especialidad": "proident",
+  "motivo_de_consulta": "Enfermedad quis",
+  "antecedentes": [
+    "irure",
+    "ex",
+    "cillum"
+  ],
+  "examen_clinico": "Examen de consequat",
+  "diagnostico": "cupidatat voluptate",
+  "tratamiento": [
+    "labore",
+    "est"
+  ],
+  "examenes_auxiliares": [
+    "enim",
+    "est"
+  ],
+  "medico": "Dr enim"
+}
+{"index": {"_id": 11}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Copeland",
+    "apellido": "Morton"
+  },
+  "edad": 61,
+  "sexo": "F",
+  "direccion": "Wogan Terrace",
+  "ubigeo": 100061,
+  "dni": 71457256,
+  "grado_de_instrucción": "dolor",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(932) 481-2188",
+  "apoderado": "Hendrix",
+  "especialidad": "voluptate",
+  "motivo_de_consulta": "Enfermedad deserunt",
+  "antecedentes": [
+    "dolore",
+    "ut",
+    "id"
+  ],
+  "examen_clinico": "Examen de occaecat",
+  "diagnostico": "labore dolore",
+  "tratamiento": [
+    "dolor",
+    "irure"
+  ],
+  "examenes_auxiliares": [
+    "ex",
+    "sunt"
+  ],
+  "medico": "Dr dolor"
+}
+{"index": {"_id": 12}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Charles",
+    "apellido": "Levine"
+  },
+  "edad": 25,
+  "sexo": "F",
+  "direccion": "Ivan Court",
+  "ubigeo": 100025,
+  "dni": 71457227,
+  "grado_de_instrucción": "consequat",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(987) 544-3871",
+  "apoderado": "Tameka",
+  "especialidad": "duis",
+  "motivo_de_consulta": "Enfermedad fugiat",
+  "antecedentes": [
+    "sit",
+    "amet",
+    "ad"
+  ],
+  "examen_clinico": "Examen de esse",
+  "diagnostico": "dolor eu",
+  "tratamiento": [
+    "non",
+    "commodo"
+  ],
+  "examenes_auxiliares": [
+    "anim",
+    "sint"
+  ],
+  "medico": "Dr sit"
+}
+{"index": {"_id": 13}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Ofelia",
+    "apellido": "Buckley"
+  },
+  "edad": 41,
+  "sexo": "F",
+  "direccion": "Berry Street",
+  "ubigeo": 100041,
+  "dni": 71457246,
+  "grado_de_instrucción": "enim",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(878) 468-3177",
+  "apoderado": "Prince",
+  "especialidad": "esse",
+  "motivo_de_consulta": "Enfermedad qui",
+  "antecedentes": [
+    "cupidatat",
+    "occaecat",
+    "Lorem"
+  ],
+  "examen_clinico": "Examen de irure",
+  "diagnostico": "est est",
+  "tratamiento": [
+    "incididunt",
+    "consequat"
+  ],
+  "examenes_auxiliares": [
+    "adipisicing",
+    "voluptate"
+  ],
+  "medico": "Dr elit"
+}
+{"index": {"_id": 14}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Maricela",
+    "apellido": "Snow"
+  },
+  "edad": 45,
+  "sexo": "M",
+  "direccion": "Doughty Street",
+  "ubigeo": 100045,
+  "dni": 71457239,
+  "grado_de_instrucción": "minim",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(950) 511-2547",
+  "apoderado": "Avery",
+  "especialidad": "officia",
+  "motivo_de_consulta": "Enfermedad sunt",
+  "antecedentes": [
+    "do",
+    "ullamco",
+    "fugiat"
+  ],
+  "examen_clinico": "Examen de ad",
+  "diagnostico": "irure elit",
+  "tratamiento": [
+    "ut",
+    "sit"
+  ],
+  "examenes_auxiliares": [
+    "excepteur",
+    "aliquip"
+  ],
+  "medico": "Dr voluptate"
+}
+{"index": {"_id": 15}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Cantrell",
+    "apellido": "Tate"
+  },
+  "edad": 86,
+  "sexo": "F",
+  "direccion": "Union Avenue",
+  "ubigeo": 100086,
+  "dni": 71457284,
+  "grado_de_instrucción": "occaecat",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(978) 420-2779",
+  "apoderado": "Dotson",
+  "especialidad": "laborum",
+  "motivo_de_consulta": "Enfermedad amet",
+  "antecedentes": [
+    "est",
+    "aliquip",
+    "et"
+  ],
+  "examen_clinico": "Examen de magna",
+  "diagnostico": "id sunt",
+  "tratamiento": [
+    "pariatur",
+    "occaecat"
+  ],
+  "examenes_auxiliares": [
+    "ullamco",
+    "velit"
+  ],
+  "medico": "Dr nostrud"
+}
+{"index": {"_id": 16}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Harrington",
+    "apellido": "Rasmussen"
+  },
+  "edad": 13,
+  "sexo": "F",
+  "direccion": "Diamond Street",
+  "ubigeo": 100013,
+  "dni": 71457213,
+  "grado_de_instrucción": "id",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(935) 518-2996",
+  "apoderado": "Ellis",
+  "especialidad": "et",
+  "motivo_de_consulta": "Enfermedad duis",
+  "antecedentes": [
+    "reprehenderit",
+    "ex",
+    "enim"
+  ],
+  "examen_clinico": "Examen de elit",
+  "diagnostico": "est et",
+  "tratamiento": [
+    "ad",
+    "cupidatat"
+  ],
+  "examenes_auxiliares": [
+    "exercitation",
+    "sit"
+  ],
+  "medico": "Dr cillum"
+}
+{"index": {"_id": 17}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Elise",
+    "apellido": "Wilson"
+  },
+  "edad": 19,
+  "sexo": "M",
+  "direccion": "Kane Street",
+  "ubigeo": 100019,
+  "dni": 71457215,
+  "grado_de_instrucción": "qui",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(894) 406-3449",
+  "apoderado": "Walter",
+  "especialidad": "nulla",
+  "motivo_de_consulta": "Enfermedad et",
+  "antecedentes": [
+    "sunt",
+    "proident",
+    "tempor"
+  ],
+  "examen_clinico": "Examen de non",
+  "diagnostico": "elit dolor",
+  "tratamiento": [
+    "ea",
+    "eu"
+  ],
+  "examenes_auxiliares": [
+    "laboris",
+    "exercitation"
+  ],
+  "medico": "Dr cupidatat"
+}
+{"index": {"_id": 18}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Lucille",
+    "apellido": "Reilly"
+  },
+  "edad": 80,
+  "sexo": "M",
+  "direccion": "Manor Court",
+  "ubigeo": 100080,
+  "dni": 71457272,
+  "grado_de_instrucción": "dolore",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(954) 541-2903",
+  "apoderado": "Amy",
+  "especialidad": "minim",
+  "motivo_de_consulta": "Enfermedad qui",
+  "antecedentes": [
+    "duis",
+    "sit",
+    "eiusmod"
+  ],
+  "examen_clinico": "Examen de laboris",
+  "diagnostico": "pariatur consectetur",
+  "tratamiento": [
+    "voluptate",
+    "dolore"
+  ],
+  "examenes_auxiliares": [
+    "excepteur",
+    "enim"
+  ],
+  "medico": "Dr et"
+}
+{"index": {"_id": 19}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Lesa",
+    "apellido": "Nicholson"
+  },
+  "edad": 78,
+  "sexo": "F",
+  "direccion": "Bushwick Place",
+  "ubigeo": 100078,
+  "dni": 71457280,
+  "grado_de_instrucción": "eu",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(934) 549-3555",
+  "apoderado": "Melanie",
+  "especialidad": "ut",
+  "motivo_de_consulta": "Enfermedad laboris",
+  "antecedentes": [
+    "eu",
+    "nostrud",
+    "ea"
+  ],
+  "examen_clinico": "Examen de do",
+  "diagnostico": "in dolor",
+  "tratamiento": [
+    "magna",
+    "id"
+  ],
+  "examenes_auxiliares": [
+    "aliqua",
+    "in"
+  ],
+  "medico": "Dr sint"
+}
+{"index": {"_id": 20}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Toni",
+    "apellido": "Marquez"
+  },
+  "edad": 35,
+  "sexo": "F",
+  "direccion": "McClancy Place",
+  "ubigeo": 100035,
+  "dni": 71457229,
+  "grado_de_instrucción": "laborum",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(875) 595-3329",
+  "apoderado": "Karla",
+  "especialidad": "proident",
+  "motivo_de_consulta": "Enfermedad occaecat",
+  "antecedentes": [
+    "aliqua",
+    "laboris",
+    "occaecat"
+  ],
+  "examen_clinico": "Examen de tempor",
+  "diagnostico": "laborum pariatur",
+  "tratamiento": [
+    "eu",
+    "cupidatat"
+  ],
+  "examenes_auxiliares": [
+    "id",
+    "ex"
+  ],
+  "medico": "Dr adipisicing"
+}
+{"index": {"_id": 21}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Vivian",
+    "apellido": "Lindsay"
+  },
+  "edad": 64,
+  "sexo": "F",
+  "direccion": "Lake Place",
+  "ubigeo": 100064,
+  "dni": 71457258,
+  "grado_de_instrucción": "consequat",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(992) 509-2529",
+  "apoderado": "Donovan",
+  "especialidad": "esse",
+  "motivo_de_consulta": "Enfermedad aliquip",
+  "antecedentes": [
+    "anim",
+    "nostrud",
+    "velit"
+  ],
+  "examen_clinico": "Examen de minim",
+  "diagnostico": "labore reprehenderit",
+  "tratamiento": [
+    "fugiat",
+    "cupidatat"
+  ],
+  "examenes_auxiliares": [
+    "duis",
+    "excepteur"
+  ],
+  "medico": "Dr aliqua"
+}
+{"index": {"_id": 22}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Kirby",
+    "apellido": "Hoffman"
+  },
+  "edad": 70,
+  "sexo": "F",
+  "direccion": "Bennet Court",
+  "ubigeo": 100070,
+  "dni": 71457267,
+  "grado_de_instrucción": "est",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(981) 513-3093",
+  "apoderado": "Deana",
+  "especialidad": "ad",
+  "motivo_de_consulta": "Enfermedad anim",
+  "antecedentes": [
+    "adipisicing",
+    "irure",
+    "irure"
+  ],
+  "examen_clinico": "Examen de cillum",
+  "diagnostico": "aute magna",
+  "tratamiento": [
+    "consequat",
+    "adipisicing"
+  ],
+  "examenes_auxiliares": [
+    "magna",
+    "proident"
+  ],
+  "medico": "Dr do"
+}
+{"index": {"_id": 23}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Lester",
+    "apellido": "Oconnor"
+  },
+  "edad": 78,
+  "sexo": "F",
+  "direccion": "Troy Avenue",
+  "ubigeo": 100078,
+  "dni": 71457269,
+  "grado_de_instrucción": "incididunt",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(920) 511-2866",
+  "apoderado": "Ilene",
+  "especialidad": "aliquip",
+  "motivo_de_consulta": "Enfermedad aliquip",
+  "antecedentes": [
+    "dolor",
+    "amet",
+    "do"
+  ],
+  "examen_clinico": "Examen de ex",
+  "diagnostico": "enim ipsum",
+  "tratamiento": [
+    "irure",
+    "duis"
+  ],
+  "examenes_auxiliares": [
+    "velit",
+    "voluptate"
+  ],
+  "medico": "Dr nostrud"
+}
+{"index": {"_id": 24}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Mosley",
+    "apellido": "Bender"
+  },
+  "edad": 74,
+  "sexo": "F",
+  "direccion": "Grattan Street",
+  "ubigeo": 100074,
+  "dni": 71457276,
+  "grado_de_instrucción": "cupidatat",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(895) 448-2452",
+  "apoderado": "Sylvia",
+  "especialidad": "aute",
+  "motivo_de_consulta": "Enfermedad adipisicing",
+  "antecedentes": [
+    "sint",
+    "tempor",
+    "laboris"
+  ],
+  "examen_clinico": "Examen de quis",
+  "diagnostico": "quis ea",
+  "tratamiento": [
+    "qui",
+    "ipsum"
+  ],
+  "examenes_auxiliares": [
+    "qui",
+    "velit"
+  ],
+  "medico": "Dr ullamco"
+}
+{"index": {"_id": 25}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Tucker",
+    "apellido": "Mckenzie"
+  },
+  "edad": 31,
+  "sexo": "M",
+  "direccion": "Rodney Street",
+  "ubigeo": 100031,
+  "dni": 71457241,
+  "grado_de_instrucción": "ad",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(965) 406-3160",
+  "apoderado": "Ferrell",
+  "especialidad": "sint",
+  "motivo_de_consulta": "Enfermedad cillum",
+  "antecedentes": [
+    "deserunt",
+    "qui",
+    "quis"
+  ],
+  "examen_clinico": "Examen de reprehenderit",
+  "diagnostico": "esse aliquip",
+  "tratamiento": [
+    "enim",
+    "culpa"
+  ],
+  "examenes_auxiliares": [
+    "sit",
+    "anim"
+  ],
+  "medico": "Dr proident"
+}
+{"index": {"_id": 26}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Carson",
+    "apellido": "Houston"
+  },
+  "edad": 34,
+  "sexo": "F",
+  "direccion": "Arion Place",
+  "ubigeo": 100034,
+  "dni": 71457234,
+  "grado_de_instrucción": "voluptate",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(951) 508-2854",
+  "apoderado": "Ryan",
+  "especialidad": "exercitation",
+  "motivo_de_consulta": "Enfermedad magna",
+  "antecedentes": [
+    "elit",
+    "minim",
+    "fugiat"
+  ],
+  "examen_clinico": "Examen de nisi",
+  "diagnostico": "sunt adipisicing",
+  "tratamiento": [
+    "ipsum",
+    "consequat"
+  ],
+  "examenes_auxiliares": [
+    "reprehenderit",
+    "duis"
+  ],
+  "medico": "Dr deserunt"
+}
+{"index": {"_id": 27}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Ernestine",
+    "apellido": "Roy"
+  },
+  "edad": 21,
+  "sexo": "M",
+  "direccion": "Brooklyn Road",
+  "ubigeo": 100021,
+  "dni": 71457218,
+  "grado_de_instrucción": "nisi",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(862) 406-3542",
+  "apoderado": "Clara",
+  "especialidad": "amet",
+  "motivo_de_consulta": "Enfermedad tempor",
+  "antecedentes": [
+    "commodo",
+    "excepteur",
+    "nisi"
+  ],
+  "examen_clinico": "Examen de minim",
+  "diagnostico": "et duis",
+  "tratamiento": [
+    "aliquip",
+    "ut"
+  ],
+  "examenes_auxiliares": [
+    "irure",
+    "veniam"
+  ],
+  "medico": "Dr eu"
+}
+{"index": {"_id": 28}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Tiffany",
+    "apellido": "Cherry"
+  },
+  "edad": 56,
+  "sexo": "F",
+  "direccion": "Ridgecrest Terrace",
+  "ubigeo": 100056,
+  "dni": 71457253,
+  "grado_de_instrucción": "pariatur",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(905) 457-3003",
+  "apoderado": "Sarah",
+  "especialidad": "fugiat",
+  "motivo_de_consulta": "Enfermedad sit",
+  "antecedentes": [
+    "culpa",
+    "consequat",
+    "culpa"
+  ],
+  "examen_clinico": "Examen de id",
+  "diagnostico": "sint adipisicing",
+  "tratamiento": [
+    "enim",
+    "nulla"
+  ],
+  "examenes_auxiliares": [
+    "ipsum",
+    "ad"
+  ],
+  "medico": "Dr velit"
+}
+{"index": {"_id": 29}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Annie",
+    "apellido": "Carson"
+  },
+  "edad": 34,
+  "sexo": "F",
+  "direccion": "Bridge Street",
+  "ubigeo": 100034,
+  "dni": 71457241,
+  "grado_de_instrucción": "deserunt",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(915) 556-2343",
+  "apoderado": "Gretchen",
+  "especialidad": "tempor",
+  "motivo_de_consulta": "Enfermedad labore",
+  "antecedentes": [
+    "do",
+    "sint",
+    "ut"
+  ],
+  "examen_clinico": "Examen de culpa",
+  "diagnostico": "excepteur ea",
+  "tratamiento": [
+    "deserunt",
+    "nisi"
+  ],
+  "examenes_auxiliares": [
+    "et",
+    "sunt"
+  ],
+  "medico": "Dr quis"
+}
+{"index": {"_id": 30}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Franco",
+    "apellido": "Henderson"
+  },
+  "edad": 58,
+  "sexo": "M",
+  "direccion": "Visitation Place",
+  "ubigeo": 100058,
+  "dni": 71457257,
+  "grado_de_instrucción": "veniam",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(898) 556-3906",
+  "apoderado": "Chan",
+  "especialidad": "labore",
+  "motivo_de_consulta": "Enfermedad elit",
+  "antecedentes": [
+    "deserunt",
+    "esse",
+    "eu"
+  ],
+  "examen_clinico": "Examen de et",
+  "diagnostico": "minim laborum",
+  "tratamiento": [
+    "duis",
+    "nulla"
+  ],
+  "examenes_auxiliares": [
+    "excepteur",
+    "dolore"
+  ],
+  "medico": "Dr elit"
+}
+{"index": {"_id": 31}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Violet",
+    "apellido": "Haney"
+  },
+  "edad": 14,
+  "sexo": "M",
+  "direccion": "Prospect Place",
+  "ubigeo": 100014,
+  "dni": 71457204,
+  "grado_de_instrucción": "reprehenderit",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(809) 433-3541",
+  "apoderado": "Clements",
+  "especialidad": "est",
+  "motivo_de_consulta": "Enfermedad eiusmod",
+  "antecedentes": [
+    "est",
+    "quis",
+    "magna"
+  ],
+  "examen_clinico": "Examen de fugiat",
+  "diagnostico": "do dolor",
+  "tratamiento": [
+    "deserunt",
+    "quis"
+  ],
+  "examenes_auxiliares": [
+    "enim",
+    "culpa"
+  ],
+  "medico": "Dr nisi"
+}
+{"index": {"_id": 32}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Carney",
+    "apellido": "Tanner"
+  },
+  "edad": 45,
+  "sexo": "M",
+  "direccion": "Osborn Street",
+  "ubigeo": 100045,
+  "dni": 71457253,
+  "grado_de_instrucción": "est",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(843) 573-3427",
+  "apoderado": "Concetta",
+  "especialidad": "veniam",
+  "motivo_de_consulta": "Enfermedad ullamco",
+  "antecedentes": [
+    "aute",
+    "velit",
+    "id"
+  ],
+  "examen_clinico": "Examen de magna",
+  "diagnostico": "nulla cupidatat",
+  "tratamiento": [
+    "quis",
+    "quis"
+  ],
+  "examenes_auxiliares": [
+    "eu",
+    "eu"
+  ],
+  "medico": "Dr Lorem"
+}
+{"index": {"_id": 33}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Jayne",
+    "apellido": "Washington"
+  },
+  "edad": 46,
+  "sexo": "F",
+  "direccion": "Laurel Avenue",
+  "ubigeo": 100046,
+  "dni": 71457246,
+  "grado_de_instrucción": "duis",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(868) 407-3760",
+  "apoderado": "Arline",
+  "especialidad": "non",
+  "motivo_de_consulta": "Enfermedad cillum",
+  "antecedentes": [
+    "ad",
+    "nisi",
+    "tempor"
+  ],
+  "examen_clinico": "Examen de labore",
+  "diagnostico": "nisi dolor",
+  "tratamiento": [
+    "anim",
+    "culpa"
+  ],
+  "examenes_auxiliares": [
+    "commodo",
+    "velit"
+  ],
+  "medico": "Dr culpa"
+}
+{"index": {"_id": 34}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Marci",
+    "apellido": "Schroeder"
+  },
+  "edad": 36,
+  "sexo": "F",
+  "direccion": "Newel Street",
+  "ubigeo": 100036,
+  "dni": 71457231,
+  "grado_de_instrucción": "labore",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(968) 520-3507",
+  "apoderado": "Sellers",
+  "especialidad": "nisi",
+  "motivo_de_consulta": "Enfermedad incididunt",
+  "antecedentes": [
+    "ea",
+    "id",
+    "quis"
+  ],
+  "examen_clinico": "Examen de exercitation",
+  "diagnostico": "ipsum culpa",
+  "tratamiento": [
+    "duis",
+    "sunt"
+  ],
+  "examenes_auxiliares": [
+    "reprehenderit",
+    "eu"
+  ],
+  "medico": "Dr laborum"
+}
+{"index": {"_id": 35}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Stevens",
+    "apellido": "Crosby"
+  },
+  "edad": 30,
+  "sexo": "M",
+  "direccion": "Cedar Street",
+  "ubigeo": 100030,
+  "dni": 71457231,
+  "grado_de_instrucción": "pariatur",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(803) 490-2098",
+  "apoderado": "Paige",
+  "especialidad": "culpa",
+  "motivo_de_consulta": "Enfermedad est",
+  "antecedentes": [
+    "mollit",
+    "aute",
+    "veniam"
+  ],
+  "examen_clinico": "Examen de laboris",
+  "diagnostico": "nostrud sunt",
+  "tratamiento": [
+    "dolor",
+    "amet"
+  ],
+  "examenes_auxiliares": [
+    "nisi",
+    "tempor"
+  ],
+  "medico": "Dr ad"
+}
+{"index": {"_id": 36}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Winters",
+    "apellido": "Hooper"
+  },
+  "edad": 44,
+  "sexo": "M",
+  "direccion": "Conduit Boulevard",
+  "ubigeo": 100044,
+  "dni": 71457236,
+  "grado_de_instrucción": "id",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(857) 461-3504",
+  "apoderado": "Georgia",
+  "especialidad": "aliqua",
+  "motivo_de_consulta": "Enfermedad do",
+  "antecedentes": [
+    "ullamco",
+    "aute",
+    "do"
+  ],
+  "examen_clinico": "Examen de quis",
+  "diagnostico": "duis ex",
+  "tratamiento": [
+    "adipisicing",
+    "adipisicing"
+  ],
+  "examenes_auxiliares": [
+    "laborum",
+    "ea"
+  ],
+  "medico": "Dr magna"
+}
+{"index": {"_id": 37}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bernard",
+    "apellido": "Blackburn"
+  },
+  "edad": 63,
+  "sexo": "M",
+  "direccion": "Seagate Terrace",
+  "ubigeo": 100063,
+  "dni": 71457254,
+  "grado_de_instrucción": "fugiat",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(847) 513-2546",
+  "apoderado": "Willie",
+  "especialidad": "nulla",
+  "motivo_de_consulta": "Enfermedad sint",
+  "antecedentes": [
+    "et",
+    "deserunt",
+    "sint"
+  ],
+  "examen_clinico": "Examen de labore",
+  "diagnostico": "qui pariatur",
+  "tratamiento": [
+    "proident",
+    "duis"
+  ],
+  "examenes_auxiliares": [
+    "reprehenderit",
+    "aliqua"
+  ],
+  "medico": "Dr eiusmod"
+}
+{"index": {"_id": 38}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bonnie",
+    "apellido": "Young"
+  },
+  "edad": 32,
+  "sexo": "M",
+  "direccion": "Guernsey Street",
+  "ubigeo": 100032,
+  "dni": 71457230,
+  "grado_de_instrucción": "esse",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(914) 480-3060",
+  "apoderado": "Underwood",
+  "especialidad": "commodo",
+  "motivo_de_consulta": "Enfermedad commodo",
+  "antecedentes": [
+    "nulla",
+    "eiusmod",
+    "qui"
+  ],
+  "examen_clinico": "Examen de irure",
+  "diagnostico": "id amet",
+  "tratamiento": [
+    "aliquip",
+    "ex"
+  ],
+  "examenes_auxiliares": [
+    "eiusmod",
+    "excepteur"
+  ],
+  "medico": "Dr deserunt"
+}
+{"index": {"_id": 39}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Gallegos",
+    "apellido": "Austin"
+  },
+  "edad": 18,
+  "sexo": "F",
+  "direccion": "Remsen Street",
+  "ubigeo": 100018,
+  "dni": 71457210,
+  "grado_de_instrucción": "in",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(850) 431-3528",
+  "apoderado": "Hardy",
+  "especialidad": "consequat",
+  "motivo_de_consulta": "Enfermedad in",
+  "antecedentes": [
+    "labore",
+    "nostrud",
+    "adipisicing"
+  ],
+  "examen_clinico": "Examen de laboris",
+  "diagnostico": "et pariatur",
+  "tratamiento": [
+    "duis",
+    "deserunt"
+  ],
+  "examenes_auxiliares": [
+    "non",
+    "deserunt"
+  ],
+  "medico": "Dr deserunt"
+}
+{"index": {"_id": 40}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Mcdowell",
+    "apellido": "Hamilton"
+  },
+  "edad": 34,
+  "sexo": "F",
+  "direccion": "Saratoga Avenue",
+  "ubigeo": 100034,
+  "dni": 71457231,
+  "grado_de_instrucción": "Lorem",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(867) 471-3301",
+  "apoderado": "Warner",
+  "especialidad": "incididunt",
+  "motivo_de_consulta": "Enfermedad duis",
+  "antecedentes": [
+    "non",
+    "amet",
+    "veniam"
+  ],
+  "examen_clinico": "Examen de et",
+  "diagnostico": "dolore occaecat",
+  "tratamiento": [
+    "incididunt",
+    "fugiat"
+  ],
+  "examenes_auxiliares": [
+    "eu",
+    "deserunt"
+  ],
+  "medico": "Dr minim"
+}
+{"index": {"_id": 41}}
+{
+
+  "nombre_paciente": {
+    "nombre": "England",
+    "apellido": "Nelson"
+  },
+  "edad": 22,
+  "sexo": "F",
+  "direccion": "Narrows Avenue",
+  "ubigeo": 100022,
+  "dni": 71457230,
+  "grado_de_instrucción": "ad",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(948) 597-2810",
+  "apoderado": "Danielle",
+  "especialidad": "anim",
+  "motivo_de_consulta": "Enfermedad laborum",
+  "antecedentes": [
+    "laboris",
+    "laboris",
+    "elit"
+  ],
+  "examen_clinico": "Examen de cupidatat",
+  "diagnostico": "non est",
+  "tratamiento": [
+    "velit",
+    "deserunt"
+  ],
+  "examenes_auxiliares": [
+    "anim",
+    "duis"
+  ],
+  "medico": "Dr sit"
+}
+{"index": {"_id": 42}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Acosta",
+    "apellido": "Kennedy"
+  },
+  "edad": 36,
+  "sexo": "F",
+  "direccion": "Java Street",
+  "ubigeo": 100036,
+  "dni": 71457234,
+  "grado_de_instrucción": "anim",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(911) 481-2483",
+  "apoderado": "Shelly",
+  "especialidad": "duis",
+  "motivo_de_consulta": "Enfermedad ex",
+  "antecedentes": [
+    "sunt",
+    "consequat",
+    "qui"
+  ],
+  "examen_clinico": "Examen de dolore",
+  "diagnostico": "fugiat nisi",
+  "tratamiento": [
+    "est",
+    "culpa"
+  ],
+  "examenes_auxiliares": [
+    "cillum",
+    "sint"
+  ],
+  "medico": "Dr laborum"
+}
+{"index": {"_id": 43}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Blanca",
+    "apellido": "Joseph"
+  },
+  "edad": 66,
+  "sexo": "M",
+  "direccion": "Gerritsen Avenue",
+  "ubigeo": 100066,
+  "dni": 71457266,
+  "grado_de_instrucción": "culpa",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(804) 494-3883",
+  "apoderado": "Elma",
+  "especialidad": "officia",
+  "motivo_de_consulta": "Enfermedad nisi",
+  "antecedentes": [
+    "id",
+    "ad",
+    "eiusmod"
+  ],
+  "examen_clinico": "Examen de sunt",
+  "diagnostico": "reprehenderit ex",
+  "tratamiento": [
+    "id",
+    "consectetur"
+  ],
+  "examenes_auxiliares": [
+    "et",
+    "labore"
+  ],
+  "medico": "Dr in"
+}
+{"index": {"_id": 44}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Roman",
+    "apellido": "Good"
+  },
+  "edad": 50,
+  "sexo": "M",
+  "direccion": "Montana Place",
+  "ubigeo": 100050,
+  "dni": 71457257,
+  "grado_de_instrucción": "eu",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(888) 491-2769",
+  "apoderado": "Terrie",
+  "especialidad": "ea",
+  "motivo_de_consulta": "Enfermedad cupidatat",
+  "antecedentes": [
+    "cupidatat",
+    "laborum",
+    "amet"
+  ],
+  "examen_clinico": "Examen de proident",
+  "diagnostico": "aliquip aliqua",
+  "tratamiento": [
+    "labore",
+    "nulla"
+  ],
+  "examenes_auxiliares": [
+    "nostrud",
+    "ad"
+  ],
+  "medico": "Dr quis"
+}
+{"index": {"_id": 45}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Herminia",
+    "apellido": "Britt"
+  },
+  "edad": 17,
+  "sexo": "F",
+  "direccion": "Christopher Avenue",
+  "ubigeo": 100017,
+  "dni": 71457220,
+  "grado_de_instrucción": "laboris",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(957) 491-3702",
+  "apoderado": "Sanchez",
+  "especialidad": "consequat",
+  "motivo_de_consulta": "Enfermedad ullamco",
+  "antecedentes": [
+    "nulla",
+    "aliqua",
+    "deserunt"
+  ],
+  "examen_clinico": "Examen de exercitation",
+  "diagnostico": "do minim",
+  "tratamiento": [
+    "ut",
+    "irure"
+  ],
+  "examenes_auxiliares": [
+    "mollit",
+    "ut"
+  ],
+  "medico": "Dr nisi"
+}
+{"index": {"_id": 46}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Downs",
+    "apellido": "Holder"
+  },
+  "edad": 33,
+  "sexo": "M",
+  "direccion": "Orange Street",
+  "ubigeo": 100033,
+  "dni": 71457226,
+  "grado_de_instrucción": "ipsum",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(885) 529-3436",
+  "apoderado": "Miles",
+  "especialidad": "aute",
+  "motivo_de_consulta": "Enfermedad culpa",
+  "antecedentes": [
+    "tempor",
+    "sit",
+    "aliqua"
+  ],
+  "examen_clinico": "Examen de incididunt",
+  "diagnostico": "consequat consectetur",
+  "tratamiento": [
+    "aliquip",
+    "in"
+  ],
+  "examenes_auxiliares": [
+    "irure",
+    "nulla"
+  ],
+  "medico": "Dr irure"
+}
+{"index": {"_id": 47}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Rosemary",
+    "apellido": "Alvarez"
+  },
+  "edad": 53,
+  "sexo": "M",
+  "direccion": "Suydam Place",
+  "ubigeo": 100053,
+  "dni": 71457261,
+  "grado_de_instrucción": "dolore",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(839) 529-3258",
+  "apoderado": "Bernadine",
+  "especialidad": "dolor",
+  "motivo_de_consulta": "Enfermedad sunt",
+  "antecedentes": [
+    "ad",
+    "elit",
+    "qui"
+  ],
+  "examen_clinico": "Examen de labore",
+  "diagnostico": "dolore enim",
+  "tratamiento": [
+    "fugiat",
+    "commodo"
+  ],
+  "examenes_auxiliares": [
+    "aliqua",
+    "irure"
+  ],
+  "medico": "Dr nostrud"
+}
+{"index": {"_id": 48}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Juliet",
+    "apellido": "Ramos"
+  },
+  "edad": 53,
+  "sexo": "F",
+  "direccion": "Rockwell Place",
+  "ubigeo": 100053,
+  "dni": 71457256,
+  "grado_de_instrucción": "cillum",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(818) 597-2837",
+  "apoderado": "Glass",
+  "especialidad": "mollit",
+  "motivo_de_consulta": "Enfermedad minim",
+  "antecedentes": [
+    "sit",
+    "non",
+    "quis"
+  ],
+  "examen_clinico": "Examen de proident",
+  "diagnostico": "excepteur elit",
+  "tratamiento": [
+    "ea",
+    "aliquip"
+  ],
+  "examenes_auxiliares": [
+    "nostrud",
+    "enim"
+  ],
+  "medico": "Dr qui"
+}
+{"index": {"_id": 49}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bernice",
+    "apellido": "Guerrero"
+  },
+  "edad": 28,
+  "sexo": "M",
+  "direccion": "Farragut Place",
+  "ubigeo": 100028,
+  "dni": 71457222,
+  "grado_de_instrucción": "consectetur",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(812) 402-3937",
+  "apoderado": "Branch",
+  "especialidad": "consectetur",
+  "motivo_de_consulta": "Enfermedad incididunt",
+  "antecedentes": [
+    "esse",
+    "amet",
+    "nisi"
+  ],
+  "examen_clinico": "Examen de consectetur",
+  "diagnostico": "anim aliqua",
+  "tratamiento": [
+    "exercitation",
+    "deserunt"
+  ],
+  "examenes_auxiliares": [
+    "sint",
+    "aliqua"
+  ],
+  "medico": "Dr Lorem"
+}
+{"index": {"_id": 50}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Allen",
+    "apellido": "Knight"
+  },
+  "edad": 23,
+  "sexo": "M",
+  "direccion": "Losee Terrace",
+  "ubigeo": 100023,
+  "dni": 71457215,
+  "grado_de_instrucción": "consectetur",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(823) 405-3156",
+  "apoderado": "Freida",
+  "especialidad": "sunt",
+  "motivo_de_consulta": "Enfermedad sunt",
+  "antecedentes": [
+    "ipsum",
+    "irure",
+    "officia"
+  ],
+  "examen_clinico": "Examen de dolor",
+  "diagnostico": "ut amet",
+  "tratamiento": [
+    "laborum",
+    "Lorem"
+  ],
+  "examenes_auxiliares": [
+    "voluptate",
+    "voluptate"
+  ],
+  "medico": "Dr pariatur"
+}
+{"index": {"_id": 51}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Dollie",
+    "apellido": "Mcmillan"
+  },
+  "edad": 12,
+  "sexo": "M",
+  "direccion": "Jodie Court",
+  "ubigeo": 100012,
+  "dni": 71457203,
+  "grado_de_instrucción": "et",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(802) 489-2962",
+  "apoderado": "Rivers",
+  "especialidad": "eu",
+  "motivo_de_consulta": "Enfermedad aliquip",
+  "antecedentes": [
+    "et",
+    "deserunt",
+    "ullamco"
+  ],
+  "examen_clinico": "Examen de mollit",
+  "diagnostico": "nulla pariatur",
+  "tratamiento": [
+    "minim",
+    "reprehenderit"
+  ],
+  "examenes_auxiliares": [
+    "in",
+    "ad"
+  ],
+  "medico": "Dr exercitation"
+}
+{"index": {"_id": 52}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Chandra",
+    "apellido": "Holloway"
+  },
+  "edad": 75,
+  "sexo": "F",
+  "direccion": "Bowery Street",
+  "ubigeo": 100075,
+  "dni": 71457268,
+  "grado_de_instrucción": "eiusmod",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(806) 524-3233",
+  "apoderado": "Geraldine",
+  "especialidad": "officia",
+  "motivo_de_consulta": "Enfermedad laborum",
+  "antecedentes": [
+    "non",
+    "et",
+    "fugiat"
+  ],
+  "examen_clinico": "Examen de aute",
+  "diagnostico": "officia Lorem",
+  "tratamiento": [
+    "deserunt",
+    "veniam"
+  ],
+  "examenes_auxiliares": [
+    "non",
+    "eu"
+  ],
+  "medico": "Dr anim"
+}
+{"index": {"_id": 53}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Jami",
+    "apellido": "Bauer"
+  },
+  "edad": 42,
+  "sexo": "M",
+  "direccion": "Hamilton Avenue",
+  "ubigeo": 100042,
+  "dni": 71457238,
+  "grado_de_instrucción": "officia",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(876) 529-2539",
+  "apoderado": "Alexandria",
+  "especialidad": "excepteur",
+  "motivo_de_consulta": "Enfermedad est",
+  "antecedentes": [
+    "in",
+    "tempor",
+    "ad"
+  ],
+  "examen_clinico": "Examen de velit",
+  "diagnostico": "eiusmod duis",
+  "tratamiento": [
+    "commodo",
+    "cupidatat"
+  ],
+  "examenes_auxiliares": [
+    "consequat",
+    "veniam"
+  ],
+  "medico": "Dr quis"
+}
+{"index": {"_id": 54}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Parsons",
+    "apellido": "Lewis"
+  },
+  "edad": 77,
+  "sexo": "M",
+  "direccion": "Chestnut Avenue",
+  "ubigeo": 100077,
+  "dni": 71457287,
+  "grado_de_instrucción": "laboris",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(908) 594-2640",
+  "apoderado": "Gena",
+  "especialidad": "culpa",
+  "motivo_de_consulta": "Enfermedad ex",
+  "antecedentes": [
+    "laboris",
+    "magna",
+    "incididunt"
+  ],
+  "examen_clinico": "Examen de non",
+  "diagnostico": "est eu",
+  "tratamiento": [
+    "nisi",
+    "commodo"
+  ],
+  "examenes_auxiliares": [
+    "dolor",
+    "reprehenderit"
+  ],
+  "medico": "Dr id"
+}
+{"index": {"_id": 55}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Cecelia",
+    "apellido": "Harris"
+  },
+  "edad": 50,
+  "sexo": "F",
+  "direccion": "Riverdale Avenue",
+  "ubigeo": 100050,
+  "dni": 71457249,
+  "grado_de_instrucción": "fugiat",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(997) 445-3474",
+  "apoderado": "Reyna",
+  "especialidad": "velit",
+  "motivo_de_consulta": "Enfermedad sit",
+  "antecedentes": [
+    "magna",
+    "est",
+    "et"
+  ],
+  "examen_clinico": "Examen de in",
+  "diagnostico": "qui aliquip",
+  "tratamiento": [
+    "non",
+    "veniam"
+  ],
+  "examenes_auxiliares": [
+    "nisi",
+    "aliqua"
+  ],
+  "medico": "Dr ex"
+}
+{"index": {"_id": 56}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bauer",
+    "apellido": "Kaufman"
+  },
+  "edad": 25,
+  "sexo": "F",
+  "direccion": "Linwood Street",
+  "ubigeo": 100025,
+  "dni": 71457219,
+  "grado_de_instrucción": "duis",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(820) 402-3400",
+  "apoderado": "Payne",
+  "especialidad": "nostrud",
+  "motivo_de_consulta": "Enfermedad laboris",
+  "antecedentes": [
+    "nostrud",
+    "aliqua",
+    "fugiat"
+  ],
+  "examen_clinico": "Examen de tempor",
+  "diagnostico": "velit ut",
+  "tratamiento": [
+    "qui",
+    "enim"
+  ],
+  "examenes_auxiliares": [
+    "duis",
+    "veniam"
+  ],
+  "medico": "Dr occaecat"
+}
+{"index": {"_id": 57}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Newman",
+    "apellido": "Maldonado"
+  },
+  "edad": 87,
+  "sexo": "F",
+  "direccion": "Hoyt Street",
+  "ubigeo": 100087,
+  "dni": 71457291,
+  "grado_de_instrucción": "labore",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(886) 444-2092",
+  "apoderado": "Cynthia",
+  "especialidad": "laboris",
+  "motivo_de_consulta": "Enfermedad commodo",
+  "antecedentes": [
+    "excepteur",
+    "ullamco",
+    "laborum"
+  ],
+  "examen_clinico": "Examen de ad",
+  "diagnostico": "ipsum adipisicing",
+  "tratamiento": [
+    "commodo",
+    "est"
+  ],
+  "examenes_auxiliares": [
+    "magna",
+    "fugiat"
+  ],
+  "medico": "Dr cupidatat"
+}
+{"index": {"_id": 58}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Hurley",
+    "apellido": "Farrell"
+  },
+  "edad": 58,
+  "sexo": "F",
+  "direccion": "Myrtle Avenue",
+  "ubigeo": 100058,
+  "dni": 71457254,
+  "grado_de_instrucción": "Lorem",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(975) 464-3504",
+  "apoderado": "Reed",
+  "especialidad": "commodo",
+  "motivo_de_consulta": "Enfermedad aute",
+  "antecedentes": [
+    "id",
+    "incididunt",
+    "mollit"
+  ],
+  "examen_clinico": "Examen de excepteur",
+  "diagnostico": "nostrud tempor",
+  "tratamiento": [
+    "qui",
+    "deserunt"
+  ],
+  "examenes_auxiliares": [
+    "sit",
+    "ad"
+  ],
+  "medico": "Dr officia"
+}
+{"index": {"_id": 59}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bryan",
+    "apellido": "Mejia"
+  },
+  "edad": 62,
+  "sexo": "M",
+  "direccion": "Lexington Avenue",
+  "ubigeo": 100062,
+  "dni": 71457254,
+  "grado_de_instrucción": "sunt",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(873) 423-3831",
+  "apoderado": "Wanda",
+  "especialidad": "pariatur",
+  "motivo_de_consulta": "Enfermedad ullamco",
+  "antecedentes": [
+    "pariatur",
+    "incididunt",
+    "mollit"
+  ],
+  "examen_clinico": "Examen de veniam",
+  "diagnostico": "est mollit",
+  "tratamiento": [
+    "velit",
+    "minim"
+  ],
+  "examenes_auxiliares": [
+    "ea",
+    "dolore"
+  ],
+  "medico": "Dr labore"
+}
+{"index": {"_id": 60}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Vickie",
+    "apellido": "Kelly"
+  },
+  "edad": 85,
+  "sexo": "M",
+  "direccion": "Danforth Street",
+  "ubigeo": 100085,
+  "dni": 71457291,
+  "grado_de_instrucción": "est",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(809) 455-2077",
+  "apoderado": "Webb",
+  "especialidad": "id",
+  "motivo_de_consulta": "Enfermedad occaecat",
+  "antecedentes": [
+    "nisi",
+    "eu",
+    "exercitation"
+  ],
+  "examen_clinico": "Examen de proident",
+  "diagnostico": "aliquip excepteur",
+  "tratamiento": [
+    "labore",
+    "do"
+  ],
+  "examenes_auxiliares": [
+    "anim",
+    "mollit"
+  ],
+  "medico": "Dr anim"
+}
+{"index": {"_id": 61}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Selma",
+    "apellido": "Cross"
+  },
+  "edad": 31,
+  "sexo": "M",
+  "direccion": "Adams Street",
+  "ubigeo": 100031,
+  "dni": 71457223,
+  "grado_de_instrucción": "eu",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(958) 534-2113",
+  "apoderado": "Britt",
+  "especialidad": "aliqua",
+  "motivo_de_consulta": "Enfermedad aute",
+  "antecedentes": [
+    "commodo",
+    "irure",
+    "reprehenderit"
+  ],
+  "examen_clinico": "Examen de qui",
+  "diagnostico": "excepteur enim",
+  "tratamiento": [
+    "magna",
+    "nulla"
+  ],
+  "examenes_auxiliares": [
+    "magna",
+    "commodo"
+  ],
+  "medico": "Dr pariatur"
+}
+{"index": {"_id": 62}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Carlson",
+    "apellido": "Ferrell"
+  },
+  "edad": 13,
+  "sexo": "F",
+  "direccion": "Cortelyou Road",
+  "ubigeo": 100013,
+  "dni": 71457209,
+  "grado_de_instrucción": "consequat",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(805) 430-2639",
+  "apoderado": "Ellen",
+  "especialidad": "tempor",
+  "motivo_de_consulta": "Enfermedad in",
+  "antecedentes": [
+    "amet",
+    "deserunt",
+    "labore"
+  ],
+  "examen_clinico": "Examen de cillum",
+  "diagnostico": "id incididunt",
+  "tratamiento": [
+    "ad",
+    "minim"
+  ],
+  "examenes_auxiliares": [
+    "est",
+    "quis"
+  ],
+  "medico": "Dr labore"
+}
+{"index": {"_id": 63}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Charlene",
+    "apellido": "Robbins"
+  },
+  "edad": 13,
+  "sexo": "M",
+  "direccion": "Oxford Street",
+  "ubigeo": 100013,
+  "dni": 71457209,
+  "grado_de_instrucción": "elit",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(927) 487-2520",
+  "apoderado": "Washington",
+  "especialidad": "eu",
+  "motivo_de_consulta": "Enfermedad amet",
+  "antecedentes": [
+    "magna",
+    "et",
+    "adipisicing"
+  ],
+  "examen_clinico": "Examen de nulla",
+  "diagnostico": "dolore proident",
+  "tratamiento": [
+    "sunt",
+    "ut"
+  ],
+  "examenes_auxiliares": [
+    "nisi",
+    "nostrud"
+  ],
+  "medico": "Dr proident"
+}
+{"index": {"_id": 64}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Owens",
+    "apellido": "Leon"
+  },
+  "edad": 48,
+  "sexo": "M",
+  "direccion": "Trucklemans Lane",
+  "ubigeo": 100048,
+  "dni": 71457248,
+  "grado_de_instrucción": "non",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(805) 443-3534",
+  "apoderado": "Yates",
+  "especialidad": "Lorem",
+  "motivo_de_consulta": "Enfermedad dolore",
+  "antecedentes": [
+    "cupidatat",
+    "tempor",
+    "ex"
+  ],
+  "examen_clinico": "Examen de ad",
+  "diagnostico": "incididunt dolore",
+  "tratamiento": [
+    "labore",
+    "nostrud"
+  ],
+  "examenes_auxiliares": [
+    "id",
+    "anim"
+  ],
+  "medico": "Dr do"
+}
+{"index": {"_id": 65}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Letitia",
+    "apellido": "Nguyen"
+  },
+  "edad": 75,
+  "sexo": "F",
+  "direccion": "Lefferts Avenue",
+  "ubigeo": 100075,
+  "dni": 71457274,
+  "grado_de_instrucción": "sint",
+  "ocupacion": "veterinario",
+  "religion": "budista",
+  "telefono": "+51(888) 560-2965",
+  "apoderado": "Colon",
+  "especialidad": "do",
+  "motivo_de_consulta": "Enfermedad eiusmod",
+  "antecedentes": [
+    "id",
+    "quis",
+    "quis"
+  ],
+  "examen_clinico": "Examen de consectetur",
+  "diagnostico": "proident cupidatat",
+  "tratamiento": [
+    "irure",
+    "proident"
+  ],
+  "examenes_auxiliares": [
+    "laborum",
+    "laboris"
+  ],
+  "medico": "Dr tempor"
+}
+{"index": {"_id": 66}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Doyle",
+    "apellido": "Keller"
+  },
+  "edad": 72,
+  "sexo": "M",
+  "direccion": "Claver Place",
+  "ubigeo": 100072,
+  "dni": 71457271,
+  "grado_de_instrucción": "id",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(976) 590-3956",
+  "apoderado": "Sheppard",
+  "especialidad": "voluptate",
+  "motivo_de_consulta": "Enfermedad minim",
+  "antecedentes": [
+    "consectetur",
+    "quis",
+    "nisi"
+  ],
+  "examen_clinico": "Examen de excepteur",
+  "diagnostico": "consequat aliquip",
+  "tratamiento": [
+    "cupidatat",
+    "amet"
+  ],
+  "examenes_auxiliares": [
+    "dolore",
+    "incididunt"
+  ],
+  "medico": "Dr fugiat"
+}
+{"index": {"_id": 67}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Carmella",
+    "apellido": "Santiago"
+  },
+  "edad": 54,
+  "sexo": "M",
+  "direccion": "Dekalb Avenue",
+  "ubigeo": 100054,
+  "dni": 71457251,
+  "grado_de_instrucción": "consectetur",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(899) 536-2874",
+  "apoderado": "Becker",
+  "especialidad": "deserunt",
+  "motivo_de_consulta": "Enfermedad reprehenderit",
+  "antecedentes": [
+    "anim",
+    "duis",
+    "sint"
+  ],
+  "examen_clinico": "Examen de voluptate",
+  "diagnostico": "sunt exercitation",
+  "tratamiento": [
+    "ea",
+    "nisi"
+  ],
+  "examenes_auxiliares": [
+    "aliqua",
+    "eu"
+  ],
+  "medico": "Dr sit"
+}
+{"index": {"_id": 68}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Norma",
+    "apellido": "Dillard"
+  },
+  "edad": 64,
+  "sexo": "M",
+  "direccion": "Fleet Street",
+  "ubigeo": 100064,
+  "dni": 71457269,
+  "grado_de_instrucción": "amet",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(982) 530-2962",
+  "apoderado": "Vega",
+  "especialidad": "sunt",
+  "motivo_de_consulta": "Enfermedad consectetur",
+  "antecedentes": [
+    "cupidatat",
+    "aliqua",
+    "deserunt"
+  ],
+  "examen_clinico": "Examen de veniam",
+  "diagnostico": "ex tempor",
+  "tratamiento": [
+    "velit",
+    "irure"
+  ],
+  "examenes_auxiliares": [
+    "ipsum",
+    "cillum"
+  ],
+  "medico": "Dr minim"
+}
+{"index": {"_id": 69}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Nona",
+    "apellido": "West"
+  },
+  "edad": 48,
+  "sexo": "F",
+  "direccion": "Columbia Street",
+  "ubigeo": 100048,
+  "dni": 71457248,
+  "grado_de_instrucción": "do",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(895) 491-3520",
+  "apoderado": "House",
+  "especialidad": "enim",
+  "motivo_de_consulta": "Enfermedad adipisicing",
+  "antecedentes": [
+    "nostrud",
+    "laborum",
+    "irure"
+  ],
+  "examen_clinico": "Examen de magna",
+  "diagnostico": "laborum mollit",
+  "tratamiento": [
+    "ea",
+    "nisi"
+  ],
+  "examenes_auxiliares": [
+    "aliqua",
+    "labore"
+  ],
+  "medico": "Dr ad"
+}
+{"index": {"_id": 70}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Martin",
+    "apellido": "Hurley"
+  },
+  "edad": 76,
+  "sexo": "M",
+  "direccion": "Ebony Court",
+  "ubigeo": 100076,
+  "dni": 71457273,
+  "grado_de_instrucción": "nostrud",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(841) 581-2302",
+  "apoderado": "Mcfadden",
+  "especialidad": "enim",
+  "motivo_de_consulta": "Enfermedad cillum",
+  "antecedentes": [
+    "in",
+    "nulla",
+    "eu"
+  ],
+  "examen_clinico": "Examen de enim",
+  "diagnostico": "pariatur adipisicing",
+  "tratamiento": [
+    "fugiat",
+    "officia"
+  ],
+  "examenes_auxiliares": [
+    "laboris",
+    "labore"
+  ],
+  "medico": "Dr exercitation"
+}
+{"index": {"_id": 71}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Simon",
+    "apellido": "Clarke"
+  },
+  "edad": 20,
+  "sexo": "M",
+  "direccion": "Louis Place",
+  "ubigeo": 100020,
+  "dni": 71457229,
+  "grado_de_instrucción": "qui",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(817) 489-3779",
+  "apoderado": "Camacho",
+  "especialidad": "nulla",
+  "motivo_de_consulta": "Enfermedad ea",
+  "antecedentes": [
+    "cillum",
+    "esse",
+    "est"
+  ],
+  "examen_clinico": "Examen de deserunt",
+  "diagnostico": "proident Lorem",
+  "tratamiento": [
+    "culpa",
+    "irure"
+  ],
+  "examenes_auxiliares": [
+    "culpa",
+    "in"
+  ],
+  "medico": "Dr consectetur"
+}
+{"index": {"_id": 72}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Juliette",
+    "apellido": "Warren"
+  },
+  "edad": 32,
+  "sexo": "F",
+  "direccion": "Amity Street",
+  "ubigeo": 100032,
+  "dni": 71457224,
+  "grado_de_instrucción": "minim",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(838) 551-2355",
+  "apoderado": "Reese",
+  "especialidad": "eu",
+  "motivo_de_consulta": "Enfermedad esse",
+  "antecedentes": [
+    "laboris",
+    "consectetur",
+    "sint"
+  ],
+  "examen_clinico": "Examen de ad",
+  "diagnostico": "amet exercitation",
+  "tratamiento": [
+    "id",
+    "quis"
+  ],
+  "examenes_auxiliares": [
+    "excepteur",
+    "fugiat"
+  ],
+  "medico": "Dr dolor"
+}
+{"index": {"_id": 73}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Coleman",
+    "apellido": "Snider"
+  },
+  "edad": 34,
+  "sexo": "F",
+  "direccion": "Remsen Avenue",
+  "ubigeo": 100034,
+  "dni": 71457240,
+  "grado_de_instrucción": "cupidatat",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(808) 488-3134",
+  "apoderado": "Duran",
+  "especialidad": "incididunt",
+  "motivo_de_consulta": "Enfermedad quis",
+  "antecedentes": [
+    "Lorem",
+    "et",
+    "fugiat"
+  ],
+  "examen_clinico": "Examen de occaecat",
+  "diagnostico": "proident veniam",
+  "tratamiento": [
+    "ipsum",
+    "consectetur"
+  ],
+  "examenes_auxiliares": [
+    "ut",
+    "labore"
+  ],
+  "medico": "Dr nulla"
+}
+{"index": {"_id": 74}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Burt",
+    "apellido": "Manning"
+  },
+  "edad": 80,
+  "sexo": "F",
+  "direccion": "Commerce Street",
+  "ubigeo": 100080,
+  "dni": 71457281,
+  "grado_de_instrucción": "duis",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(963) 501-2421",
+  "apoderado": "Franklin",
+  "especialidad": "do",
+  "motivo_de_consulta": "Enfermedad sunt",
+  "antecedentes": [
+    "elit",
+    "officia",
+    "laborum"
+  ],
+  "examen_clinico": "Examen de fugiat",
+  "diagnostico": "reprehenderit dolor",
+  "tratamiento": [
+    "pariatur",
+    "sint"
+  ],
+  "examenes_auxiliares": [
+    "ea",
+    "nulla"
+  ],
+  "medico": "Dr labore"
+}
+{"index": {"_id": 75}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Tommie",
+    "apellido": "Best"
+  },
+  "edad": 11,
+  "sexo": "M",
+  "direccion": "Hamilton Walk",
+  "ubigeo": 100011,
+  "dni": 71457220,
+  "grado_de_instrucción": "ullamco",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(933) 528-3112",
+  "apoderado": "Page",
+  "especialidad": "est",
+  "motivo_de_consulta": "Enfermedad excepteur",
+  "antecedentes": [
+    "culpa",
+    "velit",
+    "excepteur"
+  ],
+  "examen_clinico": "Examen de deserunt",
+  "diagnostico": "ad quis",
+  "tratamiento": [
+    "consectetur",
+    "aliqua"
+  ],
+  "examenes_auxiliares": [
+    "pariatur",
+    "esse"
+  ],
+  "medico": "Dr quis"
+}
+{"index": {"_id": 76}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Robbie",
+    "apellido": "Clements"
+  },
+  "edad": 35,
+  "sexo": "M",
+  "direccion": "Amber Street",
+  "ubigeo": 100035,
+  "dni": 71457234,
+  "grado_de_instrucción": "veniam",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(856) 480-2157",
+  "apoderado": "Tonya",
+  "especialidad": "laboris",
+  "motivo_de_consulta": "Enfermedad minim",
+  "antecedentes": [
+    "eu",
+    "pariatur",
+    "magna"
+  ],
+  "examen_clinico": "Examen de mollit",
+  "diagnostico": "consequat et",
+  "tratamiento": [
+    "ullamco",
+    "dolore"
+  ],
+  "examenes_auxiliares": [
+    "dolore",
+    "Lorem"
+  ],
+  "medico": "Dr reprehenderit"
+}
+{"index": {"_id": 77}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Watson",
+    "apellido": "Webster"
+  },
+  "edad": 55,
+  "sexo": "M",
+  "direccion": "Anthony Street",
+  "ubigeo": 100055,
+  "dni": 71457261,
+  "grado_de_instrucción": "pariatur",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(944) 411-2989",
+  "apoderado": "Emma",
+  "especialidad": "non",
+  "motivo_de_consulta": "Enfermedad dolore",
+  "antecedentes": [
+    "incididunt",
+    "culpa",
+    "officia"
+  ],
+  "examen_clinico": "Examen de eiusmod",
+  "diagnostico": "velit laboris",
+  "tratamiento": [
+    "occaecat",
+    "cupidatat"
+  ],
+  "examenes_auxiliares": [
+    "do",
+    "cupidatat"
+  ],
+  "medico": "Dr enim"
+}
+{"index": {"_id": 78}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Rosa",
+    "apellido": "Hutchinson"
+  },
+  "edad": 10,
+  "sexo": "M",
+  "direccion": "Beverly Road",
+  "ubigeo": 100010,
+  "dni": 71457214,
+  "grado_de_instrucción": "irure",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(808) 597-3136",
+  "apoderado": "Latoya",
+  "especialidad": "exercitation",
+  "motivo_de_consulta": "Enfermedad adipisicing",
+  "antecedentes": [
+    "ullamco",
+    "ut",
+    "enim"
+  ],
+  "examen_clinico": "Examen de consequat",
+  "diagnostico": "id veniam",
+  "tratamiento": [
+    "proident",
+    "consequat"
+  ],
+  "examenes_auxiliares": [
+    "duis",
+    "fugiat"
+  ],
+  "medico": "Dr est"
+}
+{"index": {"_id": 79}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Bradley",
+    "apellido": "Silva"
+  },
+  "edad": 76,
+  "sexo": "F",
+  "direccion": "Brightwater Court",
+  "ubigeo": 100076,
+  "dni": 71457278,
+  "grado_de_instrucción": "est",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(904) 403-3242",
+  "apoderado": "Courtney",
+  "especialidad": "pariatur",
+  "motivo_de_consulta": "Enfermedad incididunt",
+  "antecedentes": [
+    "aliqua",
+    "amet",
+    "dolor"
+  ],
+  "examen_clinico": "Examen de commodo",
+  "diagnostico": "irure quis",
+  "tratamiento": [
+    "pariatur",
+    "sit"
+  ],
+  "examenes_auxiliares": [
+    "cupidatat",
+    "id"
+  ],
+  "medico": "Dr ea"
+}
+{"index": {"_id": 80}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Chen",
+    "apellido": "Ford"
+  },
+  "edad": 37,
+  "sexo": "M",
+  "direccion": "Milford Street",
+  "ubigeo": 100037,
+  "dni": 71457243,
+  "grado_de_instrucción": "laboris",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(833) 411-2982",
+  "apoderado": "Arlene",
+  "especialidad": "consectetur",
+  "motivo_de_consulta": "Enfermedad proident",
+  "antecedentes": [
+    "eu",
+    "amet",
+    "non"
+  ],
+  "examen_clinico": "Examen de ut",
+  "diagnostico": "sunt labore",
+  "tratamiento": [
+    "ex",
+    "consectetur"
+  ],
+  "examenes_auxiliares": [
+    "exercitation",
+    "eu"
+  ],
+  "medico": "Dr et"
+}
+{"index": {"_id": 81}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Kristin",
+    "apellido": "Hinton"
+  },
+  "edad": 57,
+  "sexo": "F",
+  "direccion": "Tehama Street",
+  "ubigeo": 100057,
+  "dni": 71457263,
+  "grado_de_instrucción": "magna",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(929) 499-2259",
+  "apoderado": "Whitehead",
+  "especialidad": "ad",
+  "motivo_de_consulta": "Enfermedad dolore",
+  "antecedentes": [
+    "irure",
+    "veniam",
+    "minim"
+  ],
+  "examen_clinico": "Examen de deserunt",
+  "diagnostico": "exercitation nostrud",
+  "tratamiento": [
+    "officia",
+    "ipsum"
+  ],
+  "examenes_auxiliares": [
+    "officia",
+    "dolore"
+  ],
+  "medico": "Dr irure"
+}
+{"index": {"_id": 82}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Sherman",
+    "apellido": "Perez"
+  },
+  "edad": 50,
+  "sexo": "F",
+  "direccion": "Auburn Place",
+  "ubigeo": 100050,
+  "dni": 71457251,
+  "grado_de_instrucción": "fugiat",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(950) 438-3282",
+  "apoderado": "Annmarie",
+  "especialidad": "eiusmod",
+  "motivo_de_consulta": "Enfermedad eiusmod",
+  "antecedentes": [
+    "consectetur",
+    "et",
+    "sunt"
+  ],
+  "examen_clinico": "Examen de laborum",
+  "diagnostico": "sint do",
+  "tratamiento": [
+    "ea",
+    "occaecat"
+  ],
+  "examenes_auxiliares": [
+    "duis",
+    "mollit"
+  ],
+  "medico": "Dr proident"
+}
+{"index": {"_id": 83}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Collins",
+    "apellido": "Dunn"
+  },
+  "edad": 88,
+  "sexo": "M",
+  "direccion": "Broadway ",
+  "ubigeo": 100088,
+  "dni": 71457286,
+  "grado_de_instrucción": "laboris",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(866) 564-2037",
+  "apoderado": "Guthrie",
+  "especialidad": "do",
+  "motivo_de_consulta": "Enfermedad tempor",
+  "antecedentes": [
+    "proident",
+    "irure",
+    "duis"
+  ],
+  "examen_clinico": "Examen de ea",
+  "diagnostico": "non magna",
+  "tratamiento": [
+    "nulla",
+    "pariatur"
+  ],
+  "examenes_auxiliares": [
+    "consequat",
+    "ad"
+  ],
+  "medico": "Dr fugiat"
+}
+{"index": {"_id": 84}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Margie",
+    "apellido": "Macias"
+  },
+  "edad": 20,
+  "sexo": "F",
+  "direccion": "Garfield Place",
+  "ubigeo": 100020,
+  "dni": 71457222,
+  "grado_de_instrucción": "non",
+  "ocupacion": "ingeniero",
+  "religion": "cristiano",
+  "telefono": "+51(983) 583-3518",
+  "apoderado": "Colette",
+  "especialidad": "velit",
+  "motivo_de_consulta": "Enfermedad dolor",
+  "antecedentes": [
+    "occaecat",
+    "nostrud",
+    "id"
+  ],
+  "examen_clinico": "Examen de voluptate",
+  "diagnostico": "commodo sit",
+  "tratamiento": [
+    "ipsum",
+    "quis"
+  ],
+  "examenes_auxiliares": [
+    "veniam",
+    "veniam"
+  ],
+  "medico": "Dr proident"
+}
+{"index": {"_id": 85}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Albert",
+    "apellido": "Hatfield"
+  },
+  "edad": 18,
+  "sexo": "F",
+  "direccion": "Cobek Court",
+  "ubigeo": 100018,
+  "dni": 71457224,
+  "grado_de_instrucción": "nisi",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(842) 514-3242",
+  "apoderado": "Jane",
+  "especialidad": "anim",
+  "motivo_de_consulta": "Enfermedad velit",
+  "antecedentes": [
+    "aliqua",
+    "tempor",
+    "nisi"
+  ],
+  "examen_clinico": "Examen de aliquip",
+  "diagnostico": "incididunt velit",
+  "tratamiento": [
+    "non",
+    "sunt"
+  ],
+  "examenes_auxiliares": [
+    "sunt",
+    "non"
+  ],
+  "medico": "Dr tempor"
+}
+{"index": {"_id": 86}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Lauren",
+    "apellido": "Ingram"
+  },
+  "edad": 66,
+  "sexo": "F",
+  "direccion": "Hendrix Street",
+  "ubigeo": 100066,
+  "dni": 71457258,
+  "grado_de_instrucción": "irure",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(871) 411-3331",
+  "apoderado": "Eleanor",
+  "especialidad": "amet",
+  "motivo_de_consulta": "Enfermedad ullamco",
+  "antecedentes": [
+    "in",
+    "amet",
+    "ullamco"
+  ],
+  "examen_clinico": "Examen de duis",
+  "diagnostico": "cupidatat nulla",
+  "tratamiento": [
+    "ut",
+    "nulla"
+  ],
+  "examenes_auxiliares": [
+    "quis",
+    "officia"
+  ],
+  "medico": "Dr cillum"
+}
+{"index": {"_id": 87}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Rosemarie",
+    "apellido": "Dickerson"
+  },
+  "edad": 42,
+  "sexo": "M",
+  "direccion": "Malta Street",
+  "ubigeo": 100042,
+  "dni": 71457250,
+  "grado_de_instrucción": "amet",
+  "ocupacion": "mecanico",
+  "religion": "ateo",
+  "telefono": "+51(823) 446-3453",
+  "apoderado": "Victoria",
+  "especialidad": "sunt",
+  "motivo_de_consulta": "Enfermedad aliquip",
+  "antecedentes": [
+    "aute",
+    "sint",
+    "eu"
+  ],
+  "examen_clinico": "Examen de nisi",
+  "diagnostico": "id quis",
+  "tratamiento": [
+    "cillum",
+    "sunt"
+  ],
+  "examenes_auxiliares": [
+    "ad",
+    "officia"
+  ],
+  "medico": "Dr ex"
+}
+{"index": {"_id": 88}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Leonor",
+    "apellido": "Solomon"
+  },
+  "edad": 61,
+  "sexo": "F",
+  "direccion": "Charles Place",
+  "ubigeo": 100061,
+  "dni": 71457254,
+  "grado_de_instrucción": "voluptate",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(919) 503-3161",
+  "apoderado": "Marina",
+  "especialidad": "reprehenderit",
+  "motivo_de_consulta": "Enfermedad pariatur",
+  "antecedentes": [
+    "dolore",
+    "qui",
+    "qui"
+  ],
+  "examen_clinico": "Examen de elit",
+  "diagnostico": "do mollit",
+  "tratamiento": [
+    "veniam",
+    "do"
+  ],
+  "examenes_auxiliares": [
+    "ex",
+    "dolore"
+  ],
+  "medico": "Dr ipsum"
+}
+{"index": {"_id": 89}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Ollie",
+    "apellido": "Shelton"
+  },
+  "edad": 78,
+  "sexo": "F",
+  "direccion": "Sumner Place",
+  "ubigeo": 100078,
+  "dni": 71457271,
+  "grado_de_instrucción": "do",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(857) 509-2972",
+  "apoderado": "Dana",
+  "especialidad": "voluptate",
+  "motivo_de_consulta": "Enfermedad mollit",
+  "antecedentes": [
+    "laborum",
+    "ipsum",
+    "minim"
+  ],
+  "examen_clinico": "Examen de consequat",
+  "diagnostico": "duis occaecat",
+  "tratamiento": [
+    "pariatur",
+    "dolore"
+  ],
+  "examenes_auxiliares": [
+    "est",
+    "officia"
+  ],
+  "medico": "Dr ipsum"
+}
+{"index": {"_id": 90}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Dudley",
+    "apellido": "Fitzgerald"
+  },
+  "edad": 31,
+  "sexo": "F",
+  "direccion": "Pleasant Place",
+  "ubigeo": 100031,
+  "dni": 71457240,
+  "grado_de_instrucción": "aliqua",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(842) 556-2086",
+  "apoderado": "Noble",
+  "especialidad": "aliqua",
+  "motivo_de_consulta": "Enfermedad magna",
+  "antecedentes": [
+    "amet",
+    "aliquip",
+    "culpa"
+  ],
+  "examen_clinico": "Examen de enim",
+  "diagnostico": "fugiat cupidatat",
+  "tratamiento": [
+    "culpa",
+    "veniam"
+  ],
+  "examenes_auxiliares": [
+    "duis",
+    "non"
+  ],
+  "medico": "Dr cupidatat"
+}
+{"index": {"_id": 91}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Cunningham",
+    "apellido": "Jacobs"
+  },
+  "edad": 68,
+  "sexo": "F",
+  "direccion": "Garden Place",
+  "ubigeo": 100068,
+  "dni": 71457276,
+  "grado_de_instrucción": "commodo",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(978) 579-2459",
+  "apoderado": "Nell",
+  "especialidad": "voluptate",
+  "motivo_de_consulta": "Enfermedad qui",
+  "antecedentes": [
+    "sint",
+    "labore",
+    "irure"
+  ],
+  "examen_clinico": "Examen de id",
+  "diagnostico": "id id",
+  "tratamiento": [
+    "non",
+    "sunt"
+  ],
+  "examenes_auxiliares": [
+    "eu",
+    "anim"
+  ],
+  "medico": "Dr nulla"
+}
+{"index": {"_id": 92}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Avila",
+    "apellido": "Cortez"
+  },
+  "edad": 41,
+  "sexo": "F",
+  "direccion": "Luquer Street",
+  "ubigeo": 100041,
+  "dni": 71457237,
+  "grado_de_instrucción": "quis",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(823) 519-3837",
+  "apoderado": "Yang",
+  "especialidad": "Lorem",
+  "motivo_de_consulta": "Enfermedad nostrud",
+  "antecedentes": [
+    "minim",
+    "deserunt",
+    "minim"
+  ],
+  "examen_clinico": "Examen de tempor",
+  "diagnostico": "aliquip consectetur",
+  "tratamiento": [
+    "quis",
+    "mollit"
+  ],
+  "examenes_auxiliares": [
+    "nostrud",
+    "mollit"
+  ],
+  "medico": "Dr quis"
+}
+{"index": {"_id": 93}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Melissa",
+    "apellido": "Thompson"
+  },
+  "edad": 85,
+  "sexo": "M",
+  "direccion": "Poplar Avenue",
+  "ubigeo": 100085,
+  "dni": 71457295,
+  "grado_de_instrucción": "ad",
+  "ocupacion": "mecanico",
+  "religion": "cristiano",
+  "telefono": "+51(869) 550-2418",
+  "apoderado": "Dickerson",
+  "especialidad": "aute",
+  "motivo_de_consulta": "Enfermedad excepteur",
+  "antecedentes": [
+    "irure",
+    "aliqua",
+    "pariatur"
+  ],
+  "examen_clinico": "Examen de proident",
+  "diagnostico": "est dolor",
+  "tratamiento": [
+    "quis",
+    "proident"
+  ],
+  "examenes_auxiliares": [
+    "dolore",
+    "dolore"
+  ],
+  "medico": "Dr officia"
+}
+{"index": {"_id": 94}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Stewart",
+    "apellido": "Carver"
+  },
+  "edad": 81,
+  "sexo": "F",
+  "direccion": "Hinsdale Street",
+  "ubigeo": 100081,
+  "dni": 71457278,
+  "grado_de_instrucción": "ullamco",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(886) 516-2209",
+  "apoderado": "Laurie",
+  "especialidad": "ullamco",
+  "motivo_de_consulta": "Enfermedad labore",
+  "antecedentes": [
+    "duis",
+    "adipisicing",
+    "tempor"
+  ],
+  "examen_clinico": "Examen de veniam",
+  "diagnostico": "culpa aliqua",
+  "tratamiento": [
+    "dolor",
+    "quis"
+  ],
+  "examenes_auxiliares": [
+    "minim",
+    "in"
+  ],
+  "medico": "Dr enim"
+}
+{"index": {"_id": 95}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Marsh",
+    "apellido": "Ball"
+  },
+  "edad": 28,
+  "sexo": "F",
+  "direccion": "Gain Court",
+  "ubigeo": 100028,
+  "dni": 71457218,
+  "grado_de_instrucción": "ad",
+  "ocupacion": "ingeniero",
+  "religion": "budista",
+  "telefono": "+51(891) 556-3210",
+  "apoderado": "Ericka",
+  "especialidad": "et",
+  "motivo_de_consulta": "Enfermedad sunt",
+  "antecedentes": [
+    "laboris",
+    "cillum",
+    "non"
+  ],
+  "examen_clinico": "Examen de ipsum",
+  "diagnostico": "Lorem qui",
+  "tratamiento": [
+    "velit",
+    "adipisicing"
+  ],
+  "examenes_auxiliares": [
+    "occaecat",
+    "et"
+  ],
+  "medico": "Dr do"
+}
+{"index": {"_id": 96}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Hardin",
+    "apellido": "Sherman"
+  },
+  "edad": 21,
+  "sexo": "F",
+  "direccion": "Williams Court",
+  "ubigeo": 100021,
+  "dni": 71457214,
+  "grado_de_instrucción": "dolor",
+  "ocupacion": "ingeniero",
+  "religion": "ateo",
+  "telefono": "+51(846) 401-3371",
+  "apoderado": "Madden",
+  "especialidad": "ex",
+  "motivo_de_consulta": "Enfermedad anim",
+  "antecedentes": [
+    "excepteur",
+    "nisi",
+    "consectetur"
+  ],
+  "examen_clinico": "Examen de do",
+  "diagnostico": "labore enim",
+  "tratamiento": [
+    "amet",
+    "nostrud"
+  ],
+  "examenes_auxiliares": [
+    "fugiat",
+    "quis"
+  ],
+  "medico": "Dr do"
+}
+{"index": {"_id": 97}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Delia",
+    "apellido": "Humphrey"
+  },
+  "edad": 22,
+  "sexo": "F",
+  "direccion": "Reeve Place",
+  "ubigeo": 100022,
+  "dni": 71457217,
+  "grado_de_instrucción": "commodo",
+  "ocupacion": "veterinario",
+  "religion": "cristiano",
+  "telefono": "+51(941) 469-3006",
+  "apoderado": "Wallace",
+  "especialidad": "ut",
+  "motivo_de_consulta": "Enfermedad cillum",
+  "antecedentes": [
+    "id",
+    "deserunt",
+    "amet"
+  ],
+  "examen_clinico": "Examen de duis",
+  "diagnostico": "exercitation cupidatat",
+  "tratamiento": [
+    "commodo",
+    "deserunt"
+  ],
+  "examenes_auxiliares": [
+    "fugiat",
+    "exercitation"
+  ],
+  "medico": "Dr duis"
+}
+{"index": {"_id": 98}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Janie",
+    "apellido": "Bell"
+  },
+  "edad": 80,
+  "sexo": "F",
+  "direccion": "Taylor Street",
+  "ubigeo": 100080,
+  "dni": 71457290,
+  "grado_de_instrucción": "mollit",
+  "ocupacion": "mecanico",
+  "religion": "budista",
+  "telefono": "+51(931) 551-2983",
+  "apoderado": "Carolyn",
+  "especialidad": "veniam",
+  "motivo_de_consulta": "Enfermedad proident",
+  "antecedentes": [
+    "consectetur",
+    "nulla",
+    "consequat"
+  ],
+  "examen_clinico": "Examen de eiusmod",
+  "diagnostico": "ullamco consectetur",
+  "tratamiento": [
+    "irure",
+    "eu"
+  ],
+  "examenes_auxiliares": [
+    "ea",
+    "nostrud"
+  ],
+  "medico": "Dr cupidatat"
+}
+{"index": {"_id": 99}}
+{
+
+  "nombre_paciente": {
+    "nombre": "Alston",
+    "apellido": "Chapman"
+  },
+  "edad": 57,
+  "sexo": "M",
+  "direccion": "Rutledge Street",
+  "ubigeo": 100057,
+  "dni": 71457267,
+  "grado_de_instrucción": "cillum",
+  "ocupacion": "veterinario",
+  "religion": "ateo",
+  "telefono": "+51(880) 593-3794",
+  "apoderado": "Marissa",
+  "especialidad": "elit",
+  "motivo_de_consulta": "Enfermedad ullamco",
+  "antecedentes": [
+    "ut",
+    "incididunt",
+    "deserunt"
+  ],
+  "examen_clinico": "Examen de sunt",
+  "diagnostico": "incididunt occaecat",
+  "tratamiento": [
+    "aute",
+    "laborum"
+  ],
+  "examenes_auxiliares": [
+    "non",
+    "adipisicing"
+  ],
+  "medico": "Dr do"
+}

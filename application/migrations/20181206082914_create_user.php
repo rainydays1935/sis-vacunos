@@ -11,17 +11,21 @@ class Migration_Create_user extends CI_Migration {
                                 'unsigned' => TRUE,
                                 'auto_increment' => TRUE
                         ),
-                        'blog_title' => array(
+                        'username' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => '100',
                         ),
-                        'blog_description' => array(
+                        'email' => array(
                                 'type' => 'TEXT',
                                 'null' => TRUE,
                         ),
-                        'name' => array(
-                          'type' => 'VARCHAR',
-                          'constraint' => '80'
+                        'password' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '80'
+                        ),
+                        'type'  => array(
+                                'type' => 'INT',
+                                'constraint' => 1
                         )
                 ));
                 $this->dbforge->add_key('id_user', TRUE);
