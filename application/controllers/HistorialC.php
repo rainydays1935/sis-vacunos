@@ -14,8 +14,21 @@
             $this->load->view('partials/header');
             $this->load->view('partials/navbar');
             $this->load->view('partials/sidebar');
-
+            $this->load->view('partials/footer');
             $this->load->view('historial');
+          }
+
+          public function update() {
+              $arete = $this->input->post('id');
+              $color = $this->input->post('color');
+              $edad = $this->input->post('edad');
+
+
+              $this->db->set('color',$color);
+              $this->db->set('edad',$edad);
+              $this->db->where('arete',$arete);
+              
+              $result = $this->db->update('products');
           }
 
           public function get_vacuno() {

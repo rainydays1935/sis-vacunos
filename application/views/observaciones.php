@@ -82,16 +82,35 @@
         <!--END MODAL UPDATE-->
             
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
 <script>
     $(document).ready(function(){
+        
         show();
         init_validators();
-        $('#mydata').dataTable();
+
+        function update_table(html) {
+             
+             $('#mydata').DataTable( {
+                retrieve: true,
+                "bJQueryUI":true,
+                "bSort":true,
+                "bPaginate":true,
+                "sPaginationType":"full_numbers",
+                "iDisplayLength": 6,
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel',
+                    'csv',
+                    {   extend: 'pdf',                 
+                        messageTop: 'Lista de observaciones'
+                    }
+                ]
+            } );
+
+    
+        }
+        
         
         function init_validators() {
             $('input[type="text"]').change(function() {
@@ -111,6 +130,7 @@
         // MOSTRAR CLIENTES
 
         function show() {
+            console.log('entro');
                 $.ajax({
                     type: 'ajax',
                     url: 'observaciones/observaciones',
@@ -118,6 +138,7 @@
                     async: true,
                     dataType: 'JSON',
                     success: function(data) {
+                        console.log(data.length);
                         var html = '';
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
@@ -129,7 +150,11 @@
                                     '</td>'+
                                     '</tr>';
                         }
+                        if ( $.fn.DataTable.isDataTable('#mydata') ) {
+                            $('#mydata').DataTable().destroy();
+                        }
                         $('#show_data').html(html);
+                        update_table();
                     }
                 });
         }

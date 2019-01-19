@@ -13,6 +13,7 @@
             $this->load->view('partials/header');
             $this->load->view('partials/navbar');
             $this->load->view('partials/sidebar');
+            $this->load->view('partials/footer');
             
             $result = $this->observaciones->get_all();
             $array = json_decode(json_encode($result),true);

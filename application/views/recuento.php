@@ -38,17 +38,14 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+
+
 <script>
     $(document).ready(function(){
         show();
         init_fecha();
-        $('#mydata').dataTable();
+
 
         function init_fecha() {
             var date2 = moment().format('YYYY-MM-DD');
@@ -75,6 +72,7 @@
                                     '</tr>';
                         }
                         $('#show_data').html(html);
+                        $('#mydata').dataTable();
                     }
                 });
         }

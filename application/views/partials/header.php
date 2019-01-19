@@ -9,7 +9,11 @@
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>css/user.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>css/colors/default.css" id="theme" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <title>SIS VACUNOS</title>
+    <!-- <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet"> -->
+    <link href="<?php echo base_url(); ?>css/datatables.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <title>SISTEMA VACUNOS</title>
   </head>
 <body>

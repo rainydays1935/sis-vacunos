@@ -14,6 +14,7 @@
             $this->load->view('partials/header');
             $this->load->view('partials/navbar');
             $this->load->view('partials/sidebar');
+            $this->load->view('partials/footer');
             // $vacunos = $this->historial->get_vacunos();
             $this->load->view('clients');
           }

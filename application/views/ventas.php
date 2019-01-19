@@ -64,6 +64,12 @@
                               <input type="text" name="precio" id="precio" class="form-control is-invalid" placeholder="Ingrese precio">
                             </div>
                         </div>
+                        <div class="alert alert-danger" role="alert" style="display:none!important" id="create_error">
+                            No existe un vacuno con ese numero de arete.
+                        </div>
+                        <div class="alert alert-warning" role="alert" style="display:none!important" id="create_exist">
+                            El vacuno ya fue vendido.
+                        </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -111,18 +117,32 @@
         <!--END MODAL UPDATE-->
             
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
 <script>
     $(document).ready(function(){
         // MOSTRAR VENTAS
+        function update_table() {
+             $('#mydata').DataTable( {
+                retrieve: true,
+                "bJQueryUI":true,
+                "bSort":true,
+                "bPaginate":true,
+                "sPaginationType":"full_numbers",
+                "iDisplayLength": 6,
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel',
+                    'csv',
+                    {   extend: 'pdf',                 
+                        messageTop: 'Lista de ventas'
+                    }
+                ]
+            } );
+        }
+
         show();
         init_validators();
-        $('#mydata').dataTable();
+
         
         function init_validators() {
             $('input[type="text"]').change(function() {
@@ -161,7 +181,11 @@
                                     '</td>'+
                                     '</tr>';
                         }
+                        if ( $.fn.DataTable.isDataTable('#mydata') ) {
+                            $('#mydata').DataTable().destroy();
+                        }
                         $('#show_data').html(html);
+                        update_table();
                     }
                 });
         }
@@ -218,13 +242,32 @@
                 dataType: 'JSON',
                 data: {id_client: id_client, arete: arete, fecha: fecha, precio: precio},
                 success: function(data) {
-                    console.log('entro');
-                    $('[name=id_client]').val("");
-                    $('[name=arete]').val("");
-                    $('[name=fecha]').val("");
-                    $('[name=precio]').val("");
-                    $('#Modal_Add').modal('hide');
-                    show();
+                    console.log(data);
+                    if(!data.err){
+                        console.log('entrooooooooooo');
+                        $('[name=id_client]').val("");
+                        $('[name=arete]').val("");
+                        $('[name=fecha]').val("");
+                        $('[name=precio]').val("");
+                        $('#Modal_Add').modal('hide');
+                        $('#create_error').css('display','none');
+                        show();
+                    }
+                    else {
+                        if(data.err === 'Vendido'){
+                            $('[name=arete]').removeClass('is-valid');
+                            $('[name=arete]').addClass('is-invalid');
+                            $('#create_error').css('display','none');
+                            $('#create_exist').css('display','block');
+                        }
+                        else {
+                            $('[name=arete]').removeClass('is-valid');
+                            $('[name=arete]').addClass('is-invalid');
+                            $('#create_exist').css('display','none');
+                            $('#create_error').css('display','block');
+                        }
+                    }
+                    
                 },
                 
             });

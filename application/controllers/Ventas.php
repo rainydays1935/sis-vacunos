@@ -15,6 +15,7 @@
             $this->load->view('partials/header');
             $this->load->view('partials/navbar');
             $this->load->view('partials/sidebar');
+            $this->load->view('partials/footer');
             $result = $this->clients->get_clients();
             $array = json_decode(json_encode($result),true);
             $data['clients'] = $array;

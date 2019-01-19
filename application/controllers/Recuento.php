@@ -12,6 +12,7 @@
             $this->load->view('partials/header');
             $this->load->view('partials/navbar');
             $this->load->view('partials/sidebar');
+            $this->load->view('partials/footer');
             $this->load->view('recuento');
             }
 
@@ -26,10 +27,17 @@
                 // $date = $this->input->post('date');
                 
                 foreach($selected as $i) {
-                    // $this->db->set('fecha',$date);
-                    $this->db->set('id_products',$i);
-                    $this->db->set('fecha',$fecha);
-                    $result = $this->db->insert('recuento');
+                    //Buscar
+                    $where = array('id_products' => $i, 'fecha' => $fecha);
+                    $this->db->where($where);
+                    $result = $this->db->get('recuento');
+
+                    if(!$result->num_rows() > 0) {
+                        //Insertar 
+                        $this->db->set('id_products',$i);
+                        $this->db->set('fecha',$fecha);
+                        $result = $this->db->insert('recuento');
+                    }
                 }
                 echo json_encode($result);
             }

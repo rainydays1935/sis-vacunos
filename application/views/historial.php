@@ -9,6 +9,16 @@
             </button>
         </div>
     </div>
+    <div id="edit" style="display:none;" class="mb-5 row text-center">
+        <div
+            class="mt-4 alert alert-warning alert-dismissible fade show col-md-12"
+            role="alert">
+            <span>Debes de seleccionar un vacuno para editar</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
     <div class="form-row mt-5">
         <div class="form-group col-md-6">
             <label>Nro Arete</label>
@@ -23,6 +33,10 @@
         <div class="form-group col-md-6">
             <label>Edad</label>
             <input type="text" class="form-control is-invalid" name="edad" id="edad">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Estado</label>
+            <input disabled type="text" class="form-control" name="estado" id="estado">
         </div>
     </div>
     <div class="form-row">
@@ -51,9 +65,9 @@
             </table>
         </div>
         <div id="carouselExampleControls" class="carousel slide col-md-6" data-ride="carousel">
+            <div class="carousel-item active text-center">
             <div class="carousel-inner"  style="display:none;" id="carousel">
-                <div class="carousel-item active">
-                    <img id="active" class="d-block w-100"  alt="First slide">
+                    <img id="active" class="d-block w-auto" style="height:250px!important;"  alt="First slide">
                 </div>
                 
                 <a
@@ -73,20 +87,116 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div>
+        <div class="col-md-12 text-center mt-5 mb-2">
+            <input type="button" class="btn btn-success " value="Editar" id="btn_editar">
+        </div>
     </div>
+</div>
+<!-- MODAL UPDATE -->
+<form>
+        <div class="modal fade" id="modal_update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Vacuno</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label">Color Arete</label>
+                        <div class="col-md-10">
+                        <input type="text" name="color_edit" id="color_edit" class="form-control is-valid" placeholder="Color del arete">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label">Edad</label>
+                        <div class="col-md-10">
+                        <input type="text" name="edad_edit" id="edad_edit" class="form-control is-valid" placeholder="Edad del vacuno">
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" id="id_observacion">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" type="submit" id="bnt_update" class="btn btn-primary">Actualizar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+</form>
+<!--END MODAL UPDATE-->
     
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-<script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
 
     
 <script>
     $(document).ready(function() {
-
-        init_validators();
         
+        init_validators();
+
+        function update_table(id) {
+            $('#mydata').DataTable( {
+                            destroy: true,
+                            "bJQueryUI":true,
+                            "bSort":false,
+                            "bPaginate":true,
+                            "sPaginationType":"full_numbers",
+                            "iDisplayLength": 6,
+                            dom: 'Bfrtip',
+                            buttons: [
+                                'excel',
+                                'csv',
+                                {   extend: 'pdf',                 
+                                    messageTop: `Lista de fechas recontadas del vacuno con arete ${id}`
+                                }
+                            ]
+                        } );
+        }
+       
+        $('#btn_editar').on('click', function () {
+            var css = $('#err').css("display"); 
+            var arete = $('#arete').val();
+            if(css === 'block' || !arete){
+                $('#edit').css('display','block');
+            }
+            else {
+                $('#modal_update').modal('show');
+                var color = $('#color').val();
+                var edad = $('#edad').val();
+                var sexo = $('#sexo').val();
+
+                $('#color_edit').val(color);
+                $('#edad_edit').val(edad);
+                $('#sexo_edit').val(sexo);
+            }
+        });
+
+
+        $('#bnt_update').on('click', function() {
+            //Recuperar info
+            var id = $('#arete').val();
+            var color = $('#color_edit').val();
+            var edad = $('#edad_edit').val();
+
+            //Actualizar en la db
+            if(color && edad && sexo && id) {
+                $.ajax({
+                url: 'historialC/update',
+                method: 'POST',
+                dataType: 'json',
+                data: { id: id, color: color, edad:edad },
+                success: function (data) {
+                    $('#color_edit').val("");
+                    $('#edad_edit').val("");
+                    $('#modal_update').modal('hide');
+                }
+                });
+            }
+        });
+
         function init_validators() {
             $('input[type="text"]').change(function() {
                 if ($(this).val() != '') {
@@ -118,12 +228,15 @@
                             $('#color').val('');
                             $('#descripcion').val('');
                             $('#edad').val('');
+                            $('#estado').val('');
                             $('#carousel').css("display","none");
                             $('#show_data').html('');
                         }
                         else {
                             $('#err').css("display","none");
+                            $('#edit').css('display','none');
                             $('#color').val(data[0].color);
+                            $('#estado').val(data[0].estado === 'E'?'Encontrado':'Vendido');
                             $('#descripcion').val(data[0].descripcion);
                             $('#edad').val(data[0].edad);
                             $('#sexo').val((data[0].sexo === 'H')?'Hembra':'Macho');
@@ -143,7 +256,13 @@
                                         '<td>'+fechas[i].fecha+'</td>'+
                                         '</tr>';
                             }
+
+                            if ( $.fn.DataTable.isDataTable('#mydata') ) {
+                                $('#mydata').DataTable().destroy();
+                            }
+
                             $('#show_data').html(html);
+                            update_table(input_text.val());
 
                             //carousel
                             $('#carousel').css("display","block");
@@ -159,7 +278,7 @@
                             $('#active').attr("src",directory+imgs[0].url+'.jpg');
                             if(imgs.length > 1){
                                 for(i = 0; i < imgs; i++) {
-                                    pictures += '<div class="carousel-item"><img class="d-block w-100" src="'+directory+img[i].url+'.jpg" alt="Second slide"></div>';
+                                    pictures += '<div class="carousel-item"><img class="d-block w-auto" src="'+directory+img[i].url+'.jpg" alt="Second slide"></div>';
                                 }
                             }
 

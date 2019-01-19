@@ -9,21 +9,24 @@ class Ventas_Model extends CI_Model {
     public function create_venta() {
         //Vacuno / Se recupera el id del vacuno
         $arete = $this->input->post('arete');
-        $this->db->select('id');
-        $this->db->from('products');
         $this->db->where('arete', $arete);
+        $result = $this->db->get('products');
 
-        $result = ($this->db->get())->result();
-        // if(!($result->num_rows()) > 0) return false;
+        if(!($result->num_rows()) > 0) return array('err' => 'No existe');
         
-        $id_vacuno = json_decode(json_encode($result), true)[0]['id'];
+        $datos = $result->result();
         
+        $id_vacuno = json_decode(json_encode($datos), true)[0]['id'];
+        $estado = json_decode(json_encode($datos), true)[0]['estado'];
+
+        if($estado == 'V') return array('err' => 'Vendido');
+
         //Actualizar estado
         $this->db->set('estado','V');
         $this->db->where('id',$id_vacuno);
         $this->db->update('products');
-
-
+        
+        
         //Ganadero
         $id_ganadero = $this->input->post('id_client');
         //Insertar venta
