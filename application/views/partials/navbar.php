@@ -1,5 +1,5 @@
 <div class="contain-fluid">
-  <nav class="navbar navbar-default navbar-static-top p-0">
+  <nav class="navbar navbar-default navbar-static-top p-0" id="nav">
               <div class="navbar-header">
                   <div class="top-left-part">
                       <a class="logo" href="index.html">

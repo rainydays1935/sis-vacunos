@@ -34,7 +34,7 @@
 
     </div>
     <div class="form-group">
-        <label >Descripcion</label>
+        <label >Observaciones</label>
         <input
             type="text"
             class="form-control is-invalid" value="<?php echo set_value('descripcion'); ?>"

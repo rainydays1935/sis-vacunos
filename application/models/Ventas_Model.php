@@ -2,7 +2,8 @@
 class Ventas_Model extends CI_Model {
     
     public function get_ventas() {
-        $result = $this->db->get('ventas');
+        $result = $this->db->query('select a.arete, b.nombre, c.* from products a inner join ventas c on a.id=c.id_product inner join clients b on b.id=c.id_client');
+
         return $result->result();
     }
     
@@ -57,6 +58,27 @@ class Ventas_Model extends CI_Model {
 
     }
 
+    public function delete_venta() {
+        $id = $this->input->post('id');
+
+        
+        $this->db->where('id',$id);
+        $result = $this->db->get('ventas');
+
+        //Actualizar estado
+        $id_product = $result->result_array()[0]['id_product'];
+        $this->db->set('estado', 'E');
+        $this->db->where('id', $id_product);
+        $product = $this->db->update('products');
+
+        //Borrar venta
+        $this->db->where('id',$id);
+        $del_res = $this->db->delete('ventas');
+
+
+        return $del_res;
+        //Borrar venta
+    }
 
 
 }

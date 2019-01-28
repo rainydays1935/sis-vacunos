@@ -23,7 +23,7 @@
                         <th>Lista</th>
                         <th>Nro arete</th>
                         <th>Edad</th>
-                        <th>Descripcion</th>
+                        <th>Características</th>
                         <th>Sexo</th>
                     </tr>
                 </thead>

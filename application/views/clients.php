@@ -191,7 +191,7 @@
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
                             html+= '<tr>' +
-                                    '<td>'+data[i].id+'</td>'+
+                                    '<td>'+(i + 1)+'</td>'+
                                     '<td>'+data[i].nombre+'</td>'+
                                     '<td>'+data[i].correo+'</td>'+
                                     '<td>'+data[i].celular+'</td>'+

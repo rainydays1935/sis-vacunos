@@ -29,10 +29,11 @@
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>descripcion</th>
+                        <th>Arete</th>
+                        <th>Edad</th>
+                        <th>Observaciones</th>
                         <th>Sexo</th>
                         <th>Estado</th>
-                        <th>Edad</th>
                         <th style="text-align: right;">Acciones</th>
                     </tr>
                 </thead>
@@ -145,11 +146,12 @@
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
                             html+= '<tr>' +
-                                    '<td>'+data[i].id+'</td>'+
+                                    '<td>'+(i + 1)+'</td>'+
+                                    '<td>'+data[i].arete+'</td>'+
+                                    '<td>'+data[i].edad+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td>'+data[i].sexo+'</td>'+
-                                    '<td>'+data[i].estado+'</td>'+
-                                    '<td>'+data[i].arete+'</td>'+
+                                    '<td>'+((data[i].estado==='E')?'Encontrado':'Vendido')+'</td>'+
                                     '<td style="text-align:right;">'+
                                         '<a href="javascript:void(0);" class="btn btn-info btn-sm item_show" data-id="'+data[i].id+'" data-arete="'+data[i].arete+'" data-color="'+data[i].color+'" data-sexo="'+data[i].sexo+'" data-edad="'+data[i].edad+'" data-estado="'+data[i].estado+'" data-descripcion="'+data[i].descripcion+'" ">Ver</a>'+
                                     '</td>'+
@@ -200,18 +202,21 @@
                         var i = 0;
                         for(i = 0; i < data.length; i++) {
                             html+= '<tr>' +
-                                    '<td>'+data[i].id+'</td>'+
+                            '<td>'+(i + 1)+'</td>'+
+                                    '<td>'+data[i].arete+'</td>'+
+                                    '<td>'+data[i].edad+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td>'+data[i].sexo+'</td>'+
-                                    '<td>'+data[i].estado+'</td>'+
-                                    '<td>'+data[i].arete+'</td>'+
-                                    '<td style="text-align:right;">'+
+                                    '<td>'+((data[i].estado==='E')?'Encontrado':'Vendido')+'</td>'+  '<td style="text-align:right;">'+
                                         '<a href="javascript:void(0);" class="btn btn-info btn-sm item_show" data-id="'+data[i].id+'" data-arete="'+data[i].arete+'" data-color="'+data[i].color+'" data-sexo="'+data[i].sexo+'" data-edad="'+data[i].edad+'" data-estado="'+data[i].estado+'" data-descripcion="'+data[i].descripcion+'" ">Ver</a>'+
                                     '</td>'+
                                     '</tr>';
                         }
+                        if ( $.fn.DataTable.isDataTable('#mydata') ) {
+                            $('#mydata').DataTable().destroy();
+                        }
                         $('#show_data').html(html);
-                        $('#mydata').dataTable();
+                        update_table();
                 
                     }
                 });

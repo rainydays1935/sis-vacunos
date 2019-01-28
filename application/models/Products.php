@@ -38,20 +38,79 @@ class Products extends CI_Model {
 
 
     public function get_vacunos(){
-        $result = $this->db->get('products');
-        return $result->result_array();
+        $result = $query = $this->db->query("select id, edad, arete, color, sexo, estado from products");
+        $dat = $this->observaciones_query($query);
+        return $dat;
     }
     
     public function get_recuento(){
-        $result = $this->db->where('estado','E');
-        $result = $this->db->get('products');
+        $this->db->select("id, edad, arete, color, sexo, estado from products WHERE estado='E'");
+        $query=$this->db->get();
+        $dat = $this->observaciones_query($query);
+        return $dat;
+
+    }
+    
+    public function get_recuento_fecha(){
+        $fecha = $this->input->post('fecha');
+        $query = $this->db->query("select distinct a.id, a.edad, a.arete, a.color, a.sexo, a.estado from products a inner join recuento b on a.id=b.id_products where b.fecha='".$fecha."'");
+        $dat = $this->observaciones_query($query);
+        return $dat;
+    }
+
+    private function observaciones_query($data){
+        $resultado = [];
+        
+        foreach ($data->result() as $row)
+        {
+            $id = $row->id;
+            $tmp = $this->db->query("select d.descripcion from observaciones d inner join vacunos_observaciones e on d.id=e.id_observaciones where e.id_products='".$id."'");
+            $data = $tmp->result_array();
+            $flatten = $this->array_flatten($row, $data);
+            array_push($resultado, $flatten);
+        }
+        return $resultado;
+    }
+
+    private function array_flatten ($row, $data) {
+        $tmp = '';
+        $i = 0;
+        foreach ($data as $ob){
+            $tmp .= $ob['descripcion']." /";
+        }
+        $array = json_decode(json_encode($row), True);
+        $array += ['descripcion' => $tmp];
+        return $array;
+
+    }
+
+
+    public function get_vendidos_fecha(){
+        $fecha = $this->input->post('fecha');
+        $result = $this->db->query(" select a.*, b.*, c.* from products a inner join ventas b on a.id=b.id_product inner join clients c on b.id_client=c.id where b.fecha = '".$fecha."'");
         return $result->result_array();
+    }
+
+    public function get_edades_vacunos(){
+        $edad = $this->input->post('edad');
+        if($edad == 'l'){
+            $result = $this->db->query('select * from products where edad <= 2');
+            return $result->result_array();
+        }
+        if($edad == 'm'){
+            $result = $this->db->query('select * from products where edad  > 2 && edad <=5');
+            return $result->result_array();
+        }
+        else {
+            $result = $this->db->query('select * from products where edad  > 5');
+            return $result->result_array();
+        }
     }
 
     public function get_where() {
         $selected = $this->input->post('selected');
         
-        $this->db->select('products.*');
+        $this->db->select('products.id, products.edad, products.arete, products.color, products.sexo, products.estado');
         $this->db->from('products');
         $this->db->join('vacunos_observaciones','vacunos_observaciones.id_products=products.id');
         
@@ -60,9 +119,9 @@ class Products extends CI_Model {
         $this->db->group_by('products.id');
         
         $query=$this->db->get();
-        $data= $query->result_array();
+        $dat = $this->observaciones_query($query);
+        return $dat;
 
-        return $data;
     }
 }
 

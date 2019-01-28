@@ -16,4 +16,4 @@
 <script src="<?php echo base_url(); ?>js/vfs_fonts.js"></script>
 <script src="<?php echo base_url(); ?>js/jszip.min.js"></script>
   
-<footer class="footer text-center"> 2019 © Rain Admin </footer>
+<footer class="footer text-center"> 2019 © Desarrollado por Ramiro Arivilca Miranda </footer>

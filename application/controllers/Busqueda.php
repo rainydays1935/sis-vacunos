@@ -29,8 +29,11 @@
 
             public function vacunos() {
                 $result = $this->products->get_vacunos();
+                
                 echo json_encode($result);
             }
+
+          
 
     
     }

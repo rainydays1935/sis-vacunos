@@ -10,19 +10,27 @@
              
             <table class="table table-striped" id="mydata">
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th>id</th>
                         <th>Cliente</th>
                         <th>Vacuno</th>
                         <th>Fecha</th>
                         <th>Precio</th>
-                        <th style="text-align: right;">Acciones</th>
+                        <th style="text-align: center;">Editar</th>
+                        <th style="text-align: center;">Eliminar</th>
                     </tr>
                 </thead>
-                <tbody id="show_data">
+                <tbody id="show_data" class="text-center">
                      
                 </tbody>
             </table>
+
+        </div>
+        <div style="display:none" class="alert delete-success alert-success alert-dismissible fade show" role="alert">
+            Venta eliminada con éxito.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </div>
 
@@ -104,6 +112,7 @@
                             <input type="date" name="fecha_edit" id="fecha_edit" class="form-control is-valid">
                                 </div>
                             </div>
+
                     </div>
                     <div class="modal-footer">
                         <input type="hidden" id="id_venta">
@@ -115,6 +124,41 @@
                 </div>
         </form>
         <!--END MODAL UPDATE-->
+        <!-- MODAL DELETE -->
+        <form>
+            <div class="modal fade" id="modal_delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Venta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label">Ingrese contraseña</label>
+                                <div class="col-md-10">
+                                    <input type="password" name="pass_delete" id="pass_delete" class="form-control is-valid" placeholder="Ingrese contraseña">
+                                </div>
+                            </div>
+                            <div style="display:none" class="alert try-password alert-warning alert-dismissible fade show" role="alert">
+                                Contraseña incorrecta.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="hidden" id="id_delete">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" type="submit" id="btn_delete" class="btn btn-primary">Eliminar</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </form>
+        <!--END MODAL DELETE-->
             
 </div>
 
@@ -171,14 +215,18 @@
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
                             html+= '<tr>' +
-                                    '<td>'+data[i].id+'</td>'+
-                                    '<td>'+data[i].id_client+'</td>'+
-                                    '<td>'+data[i].id_product+'</td>'+
+                                    '<td>'+(i + 1)+'</td>'+
+                                    '<td>'+data[i].nombre+'</td>'+
+                                    '<td>'+data[i].arete+'</td>'+
                                     '<td>'+data[i].fecha+'</td>'+
                                     '<td>'+data[i].precio+'</td>'+
-                                    '<td style="text-align:right;">'+
+                                    '<td style="text-align:center;">'+
                                         '<a href="javascript:void(0);" class="btn btn-info btn-sm item_edit" data-id="'+data[i].id+'" data-fecha="'+data[i].fecha+'" data-precio="'+data[i].precio+'">Editar</a>'+
                                     '</td>'+
+                                    '<td style="text-align:center;">'+
+                                        '<a href="javascript:void(0);" class="btn btn-danger btn-sm item_delete" data-delete="'+data[i].id+'" >Eliminar</a>'+
+                                    '</td>'+
+                                    
                                     '</tr>';
                         }
                         if ( $.fn.DataTable.isDataTable('#mydata') ) {
@@ -190,7 +238,7 @@
                 });
         }
 
-        // ACTUALIZAR VENTA
+        // ACTUALIZAR VENTA MODAL
         $('#show_data').on('click','.item_edit',function() {
             //Recuperar info
             var fecha = $(this).data('fecha');
@@ -205,10 +253,51 @@
             $('#precio_edit').val(precio);
         });
 
+        //ELIMINAR VENTA MODAL 
+        // BORRAR CLIENTE
+        $('#show_data').on('click','.item_delete', function() {
+            $('#modal_delete').modal('show');
+        });
+
+      
+
+        $('#btn_delete').on('click', function() {
+            var id_venta = $('.item_delete').data('delete');
+            var password = '';
+            $.ajax({
+                url: 'http://[::1]/vacunos/pass.txt',
+                success: function(data) {
+                    password = data;
+                    var intento = $('#pass_delete').val();
+                    if( password === intento ){
+                        $.ajax({
+                        url: 'ventas/delete',
+                        method: 'POST',
+                        dataType: 'JSON',
+                        data: { id: id_venta },
+                        success: function(data) {
+                            if(data){
+                                $('#modal_delete').modal('hide');
+                                $('[name=pass_delete]').val('');
+                                $('.delete-success').css('display','block');
+                                show();
+                            }
+                        }
+                    });
+                    }
+                    else {
+                        $('.try-password').css('display','block');
+                    }
+                }
+            })
+            
+            
+        });
+
         $('#bnt_update').on('click', function() {
             //Recuperar info
             var id = $('#id_venta').val();
-            console.log(id);
+
             var precio = $('#precio_edit').val();
             var fecha = $('#fecha_edit').val();
             //Actualizar en la db
@@ -235,16 +324,13 @@
             var arete = $('#arete').val();
             var fecha = $('#fecha').val();
             var precio = $('#precio').val();
-            console.log(fecha);
             $.ajax({
                 url: 'ventas/save',
                 method: 'POST',
                 dataType: 'JSON',
                 data: {id_client: id_client, arete: arete, fecha: fecha, precio: precio},
                 success: function(data) {
-                    console.log(data);
                     if(!data.err){
-                        console.log('entrooooooooooo');
                         $('[name=id_client]').val("");
                         $('[name=arete]').val("");
                         $('[name=fecha]').val("");

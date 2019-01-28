@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="container">
     <div id="err" style="display:none;" class="mb-5 row text-center">
         <div
             class="mt-4 alert alert-warning alert-dismissible fade show col-md-12"
@@ -49,9 +49,9 @@
             <input type="text" class="form-control is-invalid" name="sexo" id="sexo">
         </div>
     </div>
-    <label for="">Fechas recontadas</label>
-    <div class="row">
-            <div class="col-6">
+    <label class="item-show" for="">Fechas recontadas</label>
+    <div class="row ">
+            <div class="col-md-6 item-show">
             <table class="table table-striped" id="mydata">
                 <thead>
                     <tr>
@@ -64,7 +64,7 @@
                 </tbody>
             </table>
         </div>
-        <div id="carouselExampleControls" class="carousel slide col-md-6" data-ride="carousel">
+        <div id="carouselExampleControls" class="ignorePDF carousel slide col-md-6" data-ride="carousel">
             <div class="carousel-item active text-center">
             <div class="carousel-inner"  style="display:none;" id="carousel">
                     <img id="active" class="d-block w-auto" style="height:250px!important;"  alt="First slide">
@@ -88,8 +88,9 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-12 text-center mt-5 mb-2">
+        <div class="col-md-12 text-center mt-5 mb-2 item-show">
             <input type="button" class="btn btn-success " value="Editar" id="btn_editar">
+            <input type="button" class="btn btn-success " value="Reporte" id="btn_report">
         </div>
     </div>
 </div>
@@ -131,10 +132,11 @@
     
 </body>
 
+<script src="<?php echo base_url(); ?>js/jspdf.min.js"></script>
     
 <script>
     $(document).ready(function() {
-        
+             
         init_validators();
 
         function update_table(id) {
@@ -156,6 +158,14 @@
                         } );
         }
        
+
+        $('#btn_report').on('click', function () {
+            $('.item-show').css('display','none');
+            window.print();
+            $('.item-show').css('display','block');
+        })
+
+
         $('#btn_editar').on('click', function () {
             var css = $('#err').css("display"); 
             var arete = $('#arete').val();
@@ -174,15 +184,27 @@
             }
         });
 
+        $('#btn_report').on('click', function () {
+            $('.item-show').each(function() {
+                $(this).css('display','none');
+            });
+            $('#nav').css('display','none');
+            window.print();
+            $('.item-show').each(function() {
+                $(this).css('display','block');
+            });
+            $('#nav').css('display','flex');
+
+        })
+
 
         $('#bnt_update').on('click', function() {
             //Recuperar info
             var id = $('#arete').val();
             var color = $('#color_edit').val();
             var edad = $('#edad_edit').val();
-
             //Actualizar en la db
-            if(color && edad && sexo && id) {
+            if(color && edad && id) {
                 $.ajax({
                 url: 'historialC/update',
                 method: 'POST',
@@ -191,6 +213,7 @@
                 success: function (data) {
                     $('#color_edit').val("");
                     $('#edad_edit').val("");
+                    console.log('entro cerra');
                     $('#modal_update').modal('hide');
                 }
                 });
@@ -220,7 +243,7 @@
                     data: {arete:input_text.val()},
                     type: 'POST',
                     success: function(res) {
-                        
+                        console.log(res);
                         var data = JSON.parse(res);
 
                         if(data.err){

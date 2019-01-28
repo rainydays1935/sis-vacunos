@@ -28,14 +28,40 @@
               $this->db->set('edad',$edad);
               $this->db->where('arete',$arete);
               
-              $result = $this->db->update('products');
+            $result = $this->db->update('products');
+            echo json_encode($result);
           }
+
+          private function observaciones_query($data){
+            $resultado = [];
+            
+            foreach ($data->result() as $row)
+            {
+                $id = $row->id;
+                $tmp = $this->db->query("select d.descripcion from observaciones d inner join vacunos_observaciones e on d.id=e.id_observaciones where e.id_products='".$id."'");
+                $data = $tmp->result_array();
+                $flatten = $this->array_flatten($row, $data);
+                array_push($resultado, $flatten);
+            }
+            return $resultado;
+        }
+    
+        private function array_flatten ($row, $data) {
+            $tmp = '';
+            $i = 0;
+            foreach ($data as $ob){
+                $tmp .= $ob['descripcion']." /";
+            }
+            $row[0] += ['descripcion' => $tmp];
+            return $row;
+    
+        }
+
 
           public function get_vacuno() {
             $arete = ($this->input->post('arete'));
-            $query = $this->db->get_where('products',array('arete' => $arete));
+            $query = $this->db->query("select a.id, a.edad, a.arete, a.color, a.sexo, a.estado from products a where a.arete=".$arete);
             $data  = $query->result_array();
-
             if($query->num_rows() != 0){
                 //Recuento
                 $id_product = $data[0]["id"];
@@ -46,10 +72,14 @@
                 $tmp2 = $this->db->get_where('pictures',array('id_product' => $id_product));
                 $images  = $tmp2->result_array();
 
-                //Imagenes
-                array_push($data, $dates, $images);
+                $tmp3 = $this->db->query("select d.descripcion from observaciones d inner join vacunos_observaciones e on d.id=e.id_observaciones where e.id_products='".$id_product."'");
+                $obs = $tmp3->result_array();
 
-                echo json_encode($data);
+                $flatten = $this->array_flatten($data, $obs);
+
+                //Imagenes
+                array_push($flatten, $dates, $images);
+                echo json_encode($flatten);
             }
             else {
                 $error = array(

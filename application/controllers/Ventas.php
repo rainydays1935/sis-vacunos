@@ -37,6 +37,11 @@
             echo json_encode($result);
           }
 
+          public function delete() {
+            $result = $this->ventas->delete_venta();
+            echo json_encode($result);
+          }
+
     }
 
 ?>
