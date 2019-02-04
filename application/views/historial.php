@@ -46,7 +46,7 @@
         </div>
         <div class="form-group col-md-6">
             <label>Sexo</label>
-            <input type="text" class="form-control is-invalid" name="sexo" id="sexo">
+            <input disabled type="text" class="form-control is-invalid" name="sexo" id="sexo">
         </div>
     </div>
     <label class="item-show" for="">Fechas recontadas</label>
@@ -95,7 +95,7 @@
     </div>
 </div>
 <!-- MODAL UPDATE -->
-<form>
+<?php echo form_open_multipart('historialC/update'); ?>
         <div class="modal fade" id="modal_update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -118,11 +118,25 @@
                         <input type="text" name="edad_edit" id="edad_edit" class="form-control is-valid" placeholder="Edad del vacuno">
                         </div>
                     </div>
+                    <div class="form-group form-car" >
+                        <label >Caracteristicas</label>
+                        <select
+                            class="custom-select multiple"
+                            multiple="multiple"
+                            id="myselect[]"
+                            name="myselect[]">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label >Foto</label>
+                        <input id="image_edit" type="file" name="userfile" size="20" />
+                    </div>
+                    <input type="hidden" name="arete_edit" id="arete_edit">
+
             </div>
             <div class="modal-footer">
-                <input type="hidden" id="id_observacion">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" type="submit" id="bnt_update" class="btn btn-primary">Actualizar</button>
+                <button  type="submit" id="bnt_update" class="btn btn-primary">Actualizar</button>
             </div>
             </div>
         </div>
@@ -177,10 +191,13 @@
                 var color = $('#color').val();
                 var edad = $('#edad').val();
                 var sexo = $('#sexo').val();
+                var arete = $('#arete').val();
+                console.log('arete',arete);
 
                 $('#color_edit').val(color);
                 $('#edad_edit').val(edad);
                 $('#sexo_edit').val(sexo);
+                $('#arete_edit').val(arete);
             }
         });
 
@@ -197,28 +214,6 @@
 
         })
 
-
-        $('#bnt_update').on('click', function() {
-            //Recuperar info
-            var id = $('#arete').val();
-            var color = $('#color_edit').val();
-            var edad = $('#edad_edit').val();
-            //Actualizar en la db
-            if(color && edad && id) {
-                $.ajax({
-                url: 'historialC/update',
-                method: 'POST',
-                dataType: 'json',
-                data: { id: id, color: color, edad:edad },
-                success: function (data) {
-                    $('#color_edit').val("");
-                    $('#edad_edit').val("");
-                    console.log('entro cerra');
-                    $('#modal_update').modal('hide');
-                }
-                });
-            }
-        });
 
         function init_validators() {
             $('input[type="text"]').change(function() {
@@ -243,7 +238,6 @@
                     data: {arete:input_text.val()},
                     type: 'POST',
                     success: function(res) {
-                        console.log(res);
                         var data = JSON.parse(res);
 
                         if(data.err){
@@ -256,6 +250,7 @@
                             $('#show_data').html('');
                         }
                         else {
+                            console.log(data);
                             $('#err').css("display","none");
                             $('#edit').css('display','none');
                             $('#color').val(data[0].color);
@@ -304,6 +299,16 @@
                                     pictures += '<div class="carousel-item"><img class="d-block w-auto" src="'+directory+img[i].url+'.jpg" alt="Second slide"></div>';
                                 }
                             }
+
+                            //llenar opciones
+                            var car = data[3];
+                            var select = $('.multiple');
+                            car.forEach(function(item) {
+                                var option = $('<option/>');
+                                option.attr({ 'value': item.id }).text(item.descripcion);
+                                select.append(option);
+                            })
+                            console.log(select);
 
                         }
                     },

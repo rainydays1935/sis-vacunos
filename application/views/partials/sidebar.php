@@ -10,6 +10,7 @@
                     <li>
                         <a href="<?php echo base_url();?>index.php/observaciones" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Caracteristicas</a>
                     </li>
+                    <hr style="width:100%!important">
                     <li>
                         <a href="<?php echo base_url();?>index.php/recuento" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Recuento</a>
                     </li>
@@ -19,6 +20,7 @@
                     <li>
                         <a href="<?php echo base_url();?>index.php/historialC" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Historial vacuno</a>
                     </li>
+                    <hr style="width:100%!important">
                     <li>
                         <a href="<?php echo base_url();?>index.php/ventas" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Ventas</a>
                     </li>
@@ -39,6 +41,9 @@
                     <div id="resources" class="accordion-body in collapse" style="height: auto;">
                     <div class="accordion-inner">
                         <ul class="nav" style="margin-left:25%!important;">
+                            <li>
+                                <a href="<?php echo base_url();?>index.php/reportes/vacunos" class="waves-effect">Vacunos</a>
+                            </li>
                             <li>
                                 <a href="<?php echo base_url();?>index.php/reportes/faltantes" class="waves-effect">Vacunos faltantes</a>
                             </li>

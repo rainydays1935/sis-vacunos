@@ -88,6 +88,10 @@
             $this->form_validation->set_rules('sexo', 'Sexo', 'required');
             $this->form_validation->set_rules('edad', 'Edad', 'required');
             $this->form_validation->set_rules('descripcion', 'Descripcion', 'required');
+            if (empty($_FILES['userfile']['name']))
+            {
+              $this->form_validation->set_rules('userfile', 'Document', 'required');
+            }
             $this->form_validation->set_rules('myselect[]', 'Caracteristicas', 'required');
 
 

@@ -60,6 +60,17 @@
                 
             }
 
+            public function vacunos() {
+                $this->commom();
+                $this->load->view('vacunos');
+                
+            }
+
+            public function get_vacunos() {
+                $result = $this->products->get_recuento();
+                echo json_encode($result);
+            }
+
              
             public function get_edades() {
                 $fecha = $this->products->get_edades_vacunos();

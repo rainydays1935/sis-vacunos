@@ -90,6 +90,7 @@
    <?php echo form_error('edad', $head, $foot); ?>
    <?php echo form_error('descripcion', $head, $foot); ?>
    <?php echo form_error('myselect[]', $head, $foot); ?>
+   <?php echo form_error('userfile', $head, $foot); ?>
 
 </form>
 
