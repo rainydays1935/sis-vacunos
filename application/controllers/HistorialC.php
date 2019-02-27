@@ -34,9 +34,13 @@
 
                 $color = $this->input->post('color_edit');
                 $edad = $this->input->post('edad_edit');
+                $sexo = $this->input->post('sexo_edit');
+                $descripcion = $this->input->post('observacion_edit');
     
                 $this->db->set('color',$color);
                 $this->db->set('edad',$edad);
+                $this->db->set('sexo',strtoupper($sexo)[0]);
+                $this->db->set('descripcion',$descripcion);
                 $this->db->where('arete',$arete);
                 //actualizar producto por arete
                 $result = $this->db->update('products');
@@ -135,7 +139,7 @@
 
           public function get_vacuno() {
             $arete = ($this->input->post('arete'));
-            $query = $this->db->query("select a.id, a.edad, a.arete, a.color, a.sexo, a.estado from products a where a.arete=".$arete);
+            $query = $this->db->query("select a.id, a.edad, a.arete, a.color, a.descripcion as descr, a.sexo, a.estado from products a where a.arete=".$arete);
             $data  = $query->result_array();
             if($query->num_rows() != 0){
                 //Recuento

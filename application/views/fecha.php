@@ -38,6 +38,7 @@
                 retrieve: true,
                 "bJQueryUI":true,
                 "bSort":true,
+                "colReorder": true,
                 "bPaginate":true,
                 "sPaginationType":"full_numbers",
                 "iDisplayLength": 6,

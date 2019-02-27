@@ -143,7 +143,7 @@
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
                             html+= '<tr>' +
-                                    '<td>'+data[i].id+'</td>'+
+                                    '<td>'+(i + 1)+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td style="text-align:right;">'+
                                         '<a href="javascript:void(0);" class="btn btn-info btn-sm item_edit" data-id="'+data[i].id+'" data-descripcion="'+data[i].descripcion+'">Editar</a>'+

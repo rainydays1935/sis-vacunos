@@ -26,23 +26,23 @@
         </div>
         <div class="form-group col-md-6">
             <label>Color Arete</label>
-            <input type="text" class="form-control is-invalid" name="color" id="color">
+            <input  disabled type="text" class="form-control is-invalid" name="color" id="color">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Edad</label>
-            <input type="text" class="form-control is-invalid" name="edad" id="edad">
+            <input  disabled type="text" class="form-control is-invalid" name="edad" id="edad">
         </div>
         <div class="form-group col-md-6">
-            <label>Estado</label>
-            <input disabled type="text" class="form-control" name="estado" id="estado">
+            <label>Observaciones</label>
+            <input disabled type="text" class="form-control" name="observaciones" id="observaciones">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Descripcion</label>
-            <input type="text" class="form-control is-invalid" name="descripcion" id="descripcion">
+            <input disabled type="text" class="form-control is-invalid" name="descripcion" id="descripcion">
         </div>
         <div class="form-group col-md-6">
             <label>Sexo</label>
@@ -55,7 +55,7 @@
             <table class="table table-striped" id="mydata">
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>indice</th>
                         <th>Fecha</th>
                     </tr>
                 </thead>
@@ -118,6 +118,18 @@
                         <input type="text" name="edad_edit" id="edad_edit" class="form-control is-valid" placeholder="Edad del vacuno">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label">Sexo</label>
+                        <div class="col-md-10">
+                        <input type="text" name="sexo_edit" id="sexo_edit" class="form-control is-valid" placeholder="Sexo del vacuno">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label">Observaciones</label>
+                        <div class="col-md-10">
+                        <input type="text" name="observacion_edit" id="observacion_edit" class="form-control is-valid" placeholder="Observaciones del vacuno">
+                        </div>
+                    </div>
                     <div class="form-group form-car" >
                         <label >Caracteristicas</label>
                         <select
@@ -175,7 +187,6 @@
 
         $('#btn_report').on('click', function () {
             $('.item-show').css('display','none');
-            window.print();
             $('.item-show').css('display','block');
         })
 
@@ -192,12 +203,13 @@
                 var edad = $('#edad').val();
                 var sexo = $('#sexo').val();
                 var arete = $('#arete').val();
-                console.log('arete',arete);
+                var observaciones = $('#observaciones').val();
 
                 $('#color_edit').val(color);
                 $('#edad_edit').val(edad);
                 $('#sexo_edit').val(sexo);
                 $('#arete_edit').val(arete);
+                $('#observacion_edit').val(observaciones);
             }
         });
 
@@ -206,7 +218,6 @@
                 $(this).css('display','none');
             });
             $('#nav').css('display','none');
-            window.print();
             $('.item-show').each(function() {
                 $(this).css('display','block');
             });
@@ -239,7 +250,7 @@
                     type: 'POST',
                     success: function(res) {
                         var data = JSON.parse(res);
-
+                        console.log('data',data)
                         if(data.err){
                             $('#err').css("display","block");
                             $('#color').val('');
@@ -250,11 +261,10 @@
                             $('#show_data').html('');
                         }
                         else {
-                            console.log(data);
                             $('#err').css("display","none");
                             $('#edit').css('display','none');
                             $('#color').val(data[0].color);
-                            $('#estado').val(data[0].estado === 'E'?'Encontrado':'Vendido');
+                            $('#observaciones').val(data[0].descr);
                             $('#descripcion').val(data[0].descripcion);
                             $('#edad').val(data[0].edad);
                             $('#sexo').val((data[0].sexo === 'H')?'Hembra':'Macho');
@@ -266,11 +276,10 @@
 
                             var html = '';
                             var fechas = data[1];
-                            window.fechas = fechas;
                             var i = 0;
                             for (i = 0; i < fechas.length; i++) {
                                 html+= '<tr>' +
-                                        '<td>'+fechas[i].id_products+'</td>'+
+                                        '<td>'+(i + 1 )+'</td>'+
                                         '<td>'+fechas[i].fecha+'</td>'+
                                         '</tr>';
                             }

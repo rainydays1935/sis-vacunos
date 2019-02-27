@@ -15,7 +15,7 @@
                 <h1 style="display:inline-block;">Recuento/Asistencia
                     <small>Fecha</small>
                 </h1>
-                <input type="date" id="fecha" disabled>
+                <input type="date" id="fecha">
             </div>
             <table class="table table-striped" id="mydata">
                 <thead>
