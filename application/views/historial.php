@@ -115,7 +115,7 @@
                     <div class="form-group row">
                         <label class="col-md-2 col-form-label">Edad</label>
                         <div class="col-md-10">
-                        <input type="text" name="edad_edit" id="edad_edit" class="form-control is-valid" placeholder="Edad del vacuno">
+                        <input type="date" name="edad_edit" id="edad_edit" class="form-control is-valid" placeholder="Edad del vacuno">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -164,6 +164,21 @@
     $(document).ready(function() {
              
         init_validators();
+
+
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
+
+
 
         function update_table(id) {
             $('#mydata').DataTable( {
@@ -266,7 +281,7 @@
                             $('#color').val(data[0].color);
                             $('#observaciones').val(data[0].descr);
                             $('#descripcion').val(data[0].descripcion);
-                            $('#edad').val(data[0].edad);
+                            $('#edad').val(getEdad(data[0].edad));
                             $('#sexo').val((data[0].sexo === 'H')?'Hembra':'Macho');
 
                             $('input[type="text"]').each(function() {

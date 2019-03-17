@@ -4,7 +4,6 @@
             <div class="col-md-12">
                 <h1>Edades
                     <small>Vacunos</small>
-
                 </h1>
                 <div class="mb-4" style="color:#fff!important">
                     <a type="submit" data-edad="l" class="btn btn-primary" id="edad" >Menor que 2 </a>
@@ -37,6 +36,19 @@
         
         update_table();
 
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
+
+
         $('a').each(function() {
             $(this).on('click', function(){
                 var edad = $(this).data('edad');
@@ -56,7 +68,7 @@
                  rango = 'Mayores a 5';
              }
 
-             $('#mydata').DataTable( {
+             var table = $('#mydata').DataTable( {
                 retrieve: true,
                 "bJQueryUI":true,
                 "bSort":true,
@@ -70,8 +82,22 @@
                     {   extend: 'pdf',                 
                         messageTop: 'Lista de vacunos por edad '+rango
                     }
-                ]
+                ],
+                "columnDefs": [ {
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+                } ],        
+                "order": [[ 1, 'asc' ]]
+
             } );
+
+            table.on( 'order.dt search.dt', function () {
+                table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i + 1;
+                    table.cell(cell).invalidate('dom'); 
+                } );
+                } ).draw();
         }
 
         $('#fecha').change(function() {
@@ -87,8 +113,6 @@
                     data: { edad: edad },
                     dataType: 'JSON',
                     success: function(data) {
-                        console.log('edata');
-                        console.log(data);
                         var html = '';
                         var i = 0;
                         for (i = 0; i < data.length; i++) {
@@ -97,7 +121,7 @@
                                     '<td>'+data[i].arete+'</td>'+
                                     '<td>'+data[i].color+'</td>'+
                                     '<td>'+((data[i].sexo==='H')?'Hembra':'Macho')+'</td>'+
-                                    '<td>'+data[i].edad+' anios </td>'+
+                                    '<td>'+getEdad(data[i].edad)+'</td>'+
                                     '<td>'+data[i].estado+'</td>'+
                                     '</tr>';
                         }

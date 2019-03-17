@@ -111,7 +111,7 @@
                 $('#mydata').DataTable().destroy();
              }
 
-             $('#mydata').DataTable( {
+             var table = $('#mydata').DataTable( {
                 retrieve: true,
                 "bJQueryUI":true,
                 "bSort":true,
@@ -125,13 +125,38 @@
                     {   extend: 'pdf',                 
                         messageTop: 'Lista de vacunos'
                     }
-                ]
-            } );
-        }
+                ],
+                "columnDefs": [ {
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+                } ],        
+                "order": [[ 1, 'asc' ]]
 
+            } );
+
+            table.on( 'order.dt search.dt', function () {
+                table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i + 1;
+                    table.cell(cell).invalidate('dom'); 
+                } );
+                } ).draw();
+        }
 
         show();
         // MOSTRAR CLIENTES
+
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
 
 
         function show() {
@@ -148,7 +173,7 @@
                             html+= '<tr>' +
                                     '<td>'+(i + 1)+'</td>'+
                                     '<td>'+data[i].arete+'</td>'+
-                                    '<td>'+data[i].edad+'</td>'+
+                                    '<td>'+getEdad(data[i].edad)+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td>'+data[i].sexo+'</td>'+
                                     '<td>'+((data[i].estado==='E')?'Encontrado':'Vendido')+'</td>'+

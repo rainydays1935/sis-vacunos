@@ -34,7 +34,7 @@
 
         function update_table(html) {
             var fecha = $('#fecha').val();
-             $('#mydata').DataTable( {
+             var table = $('#mydata').DataTable( {
                 retrieve: true,
                 "bJQueryUI":true,
                 "bSort":true,
@@ -49,14 +49,40 @@
                     {   extend: 'pdf',                 
                         messageTop: 'Lista de vacunos por fecha '+fecha
                     }
-                ]
+                ],
+                "columnDefs": [ {
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+                } ],        
+                "order": [[ 1, 'asc' ]]
+
             } );
+
+            table.on( 'order.dt search.dt', function () {
+                table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i + 1;
+                    table.cell(cell).invalidate('dom'); 
+                } );
+                } ).draw();
         }
 
         $('#fecha').change(function() {
             show();
         })
 
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
+        
         function show() {
                 var fecha = $('#fecha').val();
                 $.ajax({
@@ -77,7 +103,7 @@
                                     '<td>'+data[i].arete+'</td>'+
                                     '<td>'+data[i].color+'</td>'+
                                     '<td>'+((data[i].sexo==='H')?'Hembra':'Macho')+'</td>'+
-                                    '<td>'+data[i].edad+' anios </td>'+
+                                    '<td>'+getEdad(data[i].edad)+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '</tr>';
                         }

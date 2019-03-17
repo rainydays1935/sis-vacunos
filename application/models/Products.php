@@ -94,15 +94,15 @@ class Products extends CI_Model {
     public function get_edades_vacunos(){
         $edad = $this->input->post('edad');
         if($edad == 'l'){
-            $result = $this->db->query('select * from products where edad <= 2');
+            $result = $this->db->query('select * from products where (select datediff (now(), edad)) <= 730');
             return $result->result_array();
         }
         if($edad == 'm'){
-            $result = $this->db->query('select * from products where edad  > 2 && edad <=5');
+            $result = $this->db->query('select * from products where ((select datediff (now(), edad))  > 730 && ((select datediff (now(), edad)) <=1825))');
             return $result->result_array();
         }
         else {
-            $result = $this->db->query('select * from products where edad  > 5');
+            $result = $this->db->query('select * from products where (select datediff (now(), edad)) > 1825');
             return $result->result_array();
         }
     }

@@ -26,7 +26,7 @@
         <div class="form-group col-md-4">
             <label >Edad</label>
             <input
-                type="text"
+                type="date"
                 name="edad" id="edad"
                 class="form-control is-invalid" value="<?php echo set_value('edad'); ?>"
                 placeholder="Ingrese la edad del vacuno">

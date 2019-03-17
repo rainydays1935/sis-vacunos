@@ -30,12 +30,25 @@
 <script>
     $(document).ready(function(){
         show();
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
+
 
         function update_table(html) {
              
-             $('#mydata').DataTable( {
+             var table = $('#mydata').DataTable( {
                 retrieve: true,
                 "bJQueryUI":true,
+                "colReorder": true,
                 "bSort":true,
                 "bPaginate":true,
                 "sPaginationType":"full_numbers",
@@ -47,11 +60,31 @@
                     {   extend: 'pdf',                 
                         messageTop: 'Lista de observaciones'
                     }
-                ]
+                ],
+                "columnDefs": [ {
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+                } ],        
+                "order": [[ 1, 'asc' ]]
+
             } );
+
+            table.on( 'order.dt search.dt', function () {
+                table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i + 1;
+                    table.cell(cell).invalidate('dom'); 
+                } );
+                } ).draw();
         }
 
   
+  $('#mydata').on('click', 'tbody tr', function(){
+      console.log('aqui entro')
+   var index = table.rows( { order: 'applied' } ).nodes().indexOf(this);
+   alert(index);
+});
+
         function show() {
                 $.ajax({
                     type: 'ajax',
@@ -68,7 +101,7 @@
                                     '<td>'+(i+1)+'</td>'+
                                     '<td>'+data[i].arete+'</td>'+
                                     '<td>'+data[i].color+'</td>'+
-                                    '<td>'+data[i].edad+'</td>'+
+                                    '<td>'+getEdad(data[i].edad)+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td>'+((data[i].sexo ==='H')?'Hembra':'Macho')+'</td>'+
                                     '<td>'+((data[i].estado === 'E')?'Encontrado':'Vendido')+'</td>'+

@@ -52,6 +52,18 @@
             $('#fecha').val(date2);
         }
 
+        function getEdad(edad) {
+            var a = moment();
+            var b = moment(edad, ['YYYY-MM-DD'], true);
+
+            var years = a.diff(b, 'year');
+            b.add(years, 'years');
+
+            var months = a.diff(b, 'months');
+            b.add(months, 'months');
+            return years+' Años, ' + months + " meses"            
+        }
+
         function show() {
                 $.ajax({
                     type: 'ajax',
@@ -66,7 +78,7 @@
                             html+= '<tr>' +
                                     '<td class="text-center"><input type="checkbox" name="recuento[]" id="'+data[i].id+'"></td>'+
                                     '<td>'+data[i].arete+'</td>'+
-                                    '<td>'+data[i].edad+'</td>'+
+                                    '<td>'+getEdad(data[i].edad)+'</td>'+
                                     '<td>'+data[i].descripcion+'</td>'+
                                     '<td>'+data[i].sexo+'</td>'+
                                     '</tr>';
