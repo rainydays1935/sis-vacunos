@@ -93,8 +93,6 @@
                     data: { fecha: fecha },
                     dataType: 'JSON',
                     success: function(data) {
-                        console.log('estadasfasf');
-                        console.log(data);
                         var html = '';
                         var i = 0;
                         for (i = 0; i < data.length; i++) {

@@ -32,10 +32,12 @@
             }
             
             public function getFaltantes() {
+                //!revisar si es la consulta que desea
+                /* $query = $this->db->query("select c.id, a.fecha, c.arete, c.color from recuento a inner join (select id_products, max(fecha) as mxdate from recuento group by id_products) b on a.id_products = b.id_products and a.fecha = b.mxdate right join products c on c.id=b.id_products where c.estado = 'E'"); */
+                /* $query = $this->db->query("select c.id, c.arete, c.color,  a.fecha from recuento a inner join (select id_products, max(fecha) as mxdate from recuento group by id_products) b on a.id_products = b.id_products and a.fecha = b.mxdate  inner join products c on c.id = b.id_products where a.fecha <> '2020-11-07' order by a.fecha DESC"); */
 
-                $query = $this->db->query("select c.id, a.fecha, c.arete, c.color from recuento a inner join (select id_products, max(fecha) as mxdate from recuento group by id_products) b on a.id_products = b.id_products and a.fecha = b.mxdate right join products c on c.id=b.id_products where c.estado = 'E'");
-                $resultado = $this->observaciones_query($query);
-                echo json_encode($resultado);
+                $query = $this->products->get_recuento_faltantes();
+                echo json_encode($query);
             }
 
             public function get_fecha() {

@@ -58,6 +58,12 @@ class Products extends CI_Model {
         $dat = $this->observaciones_query($query);
         return $dat;
     }
+    public function get_recuento_faltantes(){
+        $fecha = $this->input->post('fecha');
+        $query = $this->db->query("select c.id, c.arete, c.color,  a.fecha from recuento a inner join (select id_products, max(fecha) as mxdate from recuento group by id_products) b on a.id_products = b.id_products and a.fecha = b.mxdate  right join products c on c.id = b.id_products where a.fecha <> '".$fecha."' order by a.fecha DESC;");
+        $dat = $this->observaciones_query($query);
+        return $dat;
+    }
 
     private function observaciones_query($data){
         $resultado = [];
