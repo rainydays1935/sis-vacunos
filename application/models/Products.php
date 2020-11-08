@@ -4,31 +4,32 @@ class Products extends CI_Model {
     
     public function create_product() {
         //comprobar si existe
-        $arete = $this->input->post('arete');
+      /*   $arete = $this->input->post('arete');
         $ql = $this->db->select('arete')->from('products')->where('arete',$arete)->get();
 
         if( $ql->num_rows() > 0 ) {
             return false;
         } else {
             //Insertar vacuno
-            $data = array(
-                'arete' => $this->input->post('arete'),
-                'color' => $this->input->post('color'),
-                'sexo' => $this->input->post('sexo'),
-                'edad' => $this->input->post('edad'),
-                'descripcion' => $this->input->post('descripcion'),
-                'estado' => 'E'
-            );
-            $this->db->insert('products', $data);
-            $last_id_product = $this->db->insert_id();
+          
+        } */
+        $data = array(
+            'arete' => $this->input->post('arete'),
+            'color' => $this->input->post('color'),
+            'sexo' => $this->input->post('sexo'),
+            'edad' => $this->input->post('edad'),
+            'descripcion' => $this->input->post('descripcion'),
+            'estado' => 'E'
+        );
+        $this->db->insert('products', $data);
+        $last_id_product = $this->db->insert_id();
 
-            //Insertar tabla intermedia
-            $observaciones = $this->input->post('myselect');
-            foreach($observaciones as $i) {
-                $this->db->set('id_products',$last_id_product);
-                $this->db->set('id_observaciones',$i);
-                $this->db->insert('vacunos_observaciones');
-            }
+        //Insertar tabla intermedia
+        $observaciones = $this->input->post('myselect');
+        foreach($observaciones as $i) {
+            $this->db->set('id_products',$last_id_product);
+            $this->db->set('id_observaciones',$i);
+            $this->db->insert('vacunos_observaciones');
         }
 
         //Redireccionar
@@ -124,5 +125,3 @@ class Products extends CI_Model {
 
     }
 }
-
-?>
